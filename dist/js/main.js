@@ -67,7 +67,7 @@ function headerIn() {
     }
 
     else if (notebook.matches) {
-        buttons[0].style.bottom = '10px';
+        buttons[0].style.bottom = '20px';
     }
 
     else if (desktop.matches) {
