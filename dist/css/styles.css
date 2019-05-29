@@ -960,6 +960,10 @@ input {
   #map .map__images .map__map {
     margin: 15px 0px 30px 0px;
   }
+  /*FORM*/
+  #form {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
