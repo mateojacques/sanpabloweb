@@ -65,7 +65,7 @@ function headerIn() {
         buttons[0].style.bottom = '30px';
     }
     else {
-        buttons[0].style.bottom = '30px';
+        buttons[0].style.bottom = '20px';
     }
 
 
