@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <script src="../js/main.js"></script>
+    <title>Sellos</title>
+</head>
+
+<body style="background-color: white">
+
+    <!--NAV-->
+
+    <nav id="nav">
+
+        <!--Mobile Nav-->
+
+        <div class="nav__logo__div">
+            <a href="../index.html">
+                <img class="nav__logo__img" src="../res/san pablo logo.png" alt="Libreria San Pablo">
+            </a>
+        </div>
+
+        <div id="nav--side" class="nav--side">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="productos.html" class="nav--side__link">Productos</a>
+            <a href="sellos.html" class="nav--side__link">Sellos</a>
+            <a href="servicios.html" class="nav--side__link">Servicios</a>
+            <a href="contacto.html" class="nav--side__link">Contacto</a>
+        </div>
+
+        <button class="nav__button" onclick="openNav()">
+            <div class="nav__button__line1"></div>
+            <div class="nav__button__line2"></div>
+            <div class="nav__button__line3"></div>
+        </button>
+
+        <!--Desktop Nav-->
+
+        <div class="nav__links">
+            <ul class="nav__links__list">
+                <li class="nav__links__li"><a class="nav__links__link" href="productos.html">Productos</a></li>
+                <li class="nav__links__li"><a class="nav__links__link" href="sellos.html">Sellos</a></li>
+                <li class="nav__links__li"><a class="nav__links__link" href="servicios.html">Servicios</a></li>
+                <li class="nav__links__li"><a class="nav__links__link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="sellos">
+        <h1 class="sellos__h1 title">¿Qué otro tipo de artículos ofrecemos?</h1>
+        <hr>
+        <h3 class="sellos__h3 desc">También, nuestra librería ofrece un
+            excelente servicio de <b>producción de sellos y estampas</b>, para
+            que puedas dejar tu marca en tu escuela, en tu trabajo o
+            donde quieras.
+        </h3>
+
+        <img class="sellos__header" src="../res/san pablo web/SP61--crop.png" alt="">
+    </section>
+
+    <section id="questions">
+        <h1 class="questions__h1 title">¿Cómo encargo mi sello?</h1>
+        <hr>
+        <h3 class="questions__h3 desc">Puede acercarse a nuestro local,
+            donde un empleado la guiará en el proceso, o puede realizar
+            su pedido a través de nuestro formulario web más abajo en
+            esta misma página.</h3>
+        <div class="spacer"></div>
+        <h1 class="questions__h1 title">¿Cuándo retiro mi sello?</h1>
+        <hr>
+        <h3 class="questions__h3 desc">Los sellos se retiran los
+            días martes y viernes durante la tarde. En caso de una
+            excepción o circunstancia especial, usted será notificado
+            de inmediato en cuanto a que día y hora retirar su
+            producto.</h3>
+    </section>
+
+    <section id="form">
+
+        <h1 class="form__h1 title">Pedí tu sello online!</h1>
+
+        <div class="form__div">
+            <div class="form__div__names">
+                <input type="text" class="form__name" name="name" required placeholder="Nombre (requerido)">
+                <input type="text" class="form__last-name" name="last-name" required placeholder="Apellido (requerido)">
+            </div>
+
+            <div class="form__div__contact">
+                <input type="tel" class="form__tel" name="tel" required placeholder="Teléfono (requerido)">
+                <input type="email" class="form__email" name="email" placeholder="E-mail (opcional)">
+            </div>
+
+
+            <div class="form__div__lines">
+                <input type="text" class="form__line" name="line1" required placeholder="Linea 1 (requerido)">
+                <input type="text" class="form__line" name="line2" placeholder="Linea 2 (opcional)">
+                <input type="text" class="form__line" name="line3" placeholder="Linea 3 (opcional)">
+                <input type="text" class="form__line" name="line4" placeholder="Linea 4 (opcional)">
+                <input type="text" class="form__line" name="line5" placeholder="Linea 5 (opcional)">
+                <input type="number" class="form__line" name="drawing" placeholder="N° de dibujo (opcional)">
+            </div>
+
+            <div class="form__div__comments">
+                <input type="text" class="form__comments" name="comment" placeholder="Observaciones especiales o comentarios...">
+            </div>
+
+            <div data-netlify-recaptcha="true"></div>
+
+            <input type="submit" value="Enviar" netlify class="form__submit" name="submit" required >
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h3 class="footer__h3">HORARIO DE ATENCIÓN:</h3>
+        <h4 class="footer__h4">De lunes a viernes de 7 :30 a 13 y 16 a 20hs. Sábados 9 a 13 y 16:30 a 20hs. Teléfono:
+            (011) 2059 6364.
+            Estamos en Av. Cristianía 1588 – Villa Luzuriaga.</h4>
+        <h1 class="footer__h1">©2019 LIBRERIA SAN PABLO</h1>
+        <h2 class="footer__h2">Todos los derechos reservados.</h2>
+    </footer>
+</body>
+
+</html>
