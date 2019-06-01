@@ -257,7 +257,7 @@ input {
       flex-wrap: wrap;
   background-color: #fff;
   padding: 20px;
-  border-top: 50px solid white;
+  border-top: 15px solid white;
 }
 
 #features .features__title__div {
@@ -410,7 +410,8 @@ input {
 }
 
 /*---------------------------PRODUCTOS--------------------------------*/
-/*.feature__desc {
+/*.features__desc{
+
 }*/
 /*---------------------------SELLOS--------------------------------*/
 #sellos {
