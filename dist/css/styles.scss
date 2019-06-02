@@ -466,21 +466,21 @@ input {
     }
   }
 
-  .form__div__comments{
+  .form__div__comments {
     width: 100%;
     height: auto;
     padding-top: 30px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    
-    input[name="comment"]{
+
+    input[name="comment"] {
       width: 88%;
       height: 200px;
     }
   }
 
-  input[type="submit"]{
+  input[type="submit"] {
     margin: 30px auto 0px auto;
     background: $secondaryColor;
     border-style: none;
@@ -494,19 +494,18 @@ input {
     font-size: 1.3rem;
   }
 
-  input[type="submit"]:hover{
+  input[type="submit"]:hover {
     cursor: pointer;
   }
 
-  input[type="submit"]:active{
+  input[type="submit"]:active {
     background: $secondaryColorDarker;
-
   }
 }
 
 /*---------------------------SERVICES--------------------------------*/
 
-.servicesContainer{
+.servicesContainer {
   width: 100%;
   height: auto;
   display: grid;
@@ -522,7 +521,7 @@ input {
   flex-wrap: wrap;
   text-align: center;
 
-  .services__first{
+  .services__first {
     width: 100%;
     height: auto;
     margin-bottom: 60px;
@@ -542,7 +541,7 @@ input {
   margin: 10px auto 10px auto;
   margin-left: -10px;
 
-  .sidebar{
+  .sidebar {
     width: 100%;
     height: auto;
     padding: 30px;
@@ -551,42 +550,111 @@ input {
     align-items: center;
     text-align: center;
 
-    .sidebar__h1{
+    .sidebar__h1 {
       color: $primaryColor;
       font-size: 1.7rem;
       margin-bottom: 12px;
     }
 
-    .sidebar__ul{
+    .sidebar__ul {
       list-style-type: none;
       margin-top: 15px;
       margin-bottom: 15px;
 
-      li{
+      li {
         margin-bottom: 20px;
       }
 
-      .sidebar__a1, .sidebar__a2{
+      .sidebar__a1,
+      .sidebar__a2 {
         color: $primaryColor;
         text-decoration: none;
         font-size: 1.3rem;
       }
 
-      .sidebar__a1::after{
-        content: url('../res/book\ ico.png');
+      .sidebar__a1::after {
+        content: url("../res/book\ ico.png");
         margin-left: 20px;
         margin-top: 10px;
       }
 
-      .sidebar__a2::after{
-        content: url('../res/stamp\ ico.png');
+      .sidebar__a2::after {
+        content: url("../res/stamp\ ico.png");
         margin-left: 20px;
         margin-top: 10px;
       }
     }
 
-    .sidebar__img{
+    .sidebar__img {
       margin-top: 20px;
+    }
+  }
+}
+
+/*---------------------------CONTACT--------------------------------*/
+#contact {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  #contact-form {
+    width: 50%;
+    height: auto;
+    background: $secondaryColorDarker;
+    padding: 20px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto 50px auto;
+    margin-top: 50px;
+
+    .cform__h1{
+      color: $primaryColor;
+      font-weight: 200;
+      margin: 30px auto;
+    }
+
+    .cform__div__names, .cform__div__contact, .cform__div__comments{
+      margin-bottom: 20px;
+    }
+
+    .cform__div__comments {
+      width: 100%;
+      height: auto;
+      input[type="text"]{
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100px;
+      }
+    }
+
+    .cform__submit {
+      margin: 30px auto 0px auto;
+      background: $secondaryColor;
+      border-style: none;
+      color: $lightTextColor;
+      border: 1px solid $primaryColor;
+      border-radius: 8px;
+      padding: 5px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+  
+    .cform__submit:hover {
+      cursor: pointer;
+    }
+  
+    .cform__submit:active {
+      background: $secondaryColorDarker;
     }
   }
 }
@@ -811,6 +879,12 @@ input {
     text-align: center;
   }
 
+  /*---------------------------CONTACT--------------------------------*/
+  #contact #contact-form {
+    width: 80%;
+    text-align: center;
+  }
+
   @media screen and (max-width: 468px) {
     /*MAIN SECTION CONTAINER (M)*/
     .main-section__container {
@@ -916,6 +990,24 @@ input {
     #form {
       width: 90%;
       text-align: center;
+    }
+
+    /*---------------------------CONTACT (M)--------------------------------*/
+    #contact {
+      #contact-form{
+
+        .cform__div__names, .cform__div__contact {
+          margin-bottom: 30px;
+        }
+
+        input{
+          margin-bottom: 15px;
+        }
+
+        input:last-child{
+          margin-bottom: 0px;
+        }
+      }
     }
   } /*Media Query (MW: 450PX)*/
 } /*Media Query (MW: 768PX) */
