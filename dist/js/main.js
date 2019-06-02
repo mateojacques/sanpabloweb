@@ -3,7 +3,6 @@ const closeBtn = document.getElementsByClassName("header__btn-close");
 const title = document.getElementsByClassName("header__title");
 const buttons = document.getElementsByClassName("header__buttons");
 const headerImg = document.getElementsByClassName("header__img");
-const payBtn = document.getElementById("payment__button");
 
 const mobile = window.matchMedia("(max-width: 468px)");
 const tablet = window.matchMedia("(max-width: 768px)");
