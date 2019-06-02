@@ -525,6 +525,13 @@ input {
     }
   }
 
+  .form__div__submit{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   input[type="submit"] {
     margin: 30px auto 0px auto;
     background: $secondaryColor;
@@ -545,6 +552,21 @@ input {
 
   input[type="submit"]:active {
     background: $secondaryColorDarker;
+  }
+
+  #payment__button{
+    margin: 30px auto 0px auto;
+    text-decoration: none;
+    background: $secondaryColor;
+    border-style: none;
+    color: $lightTextColor;
+    border: 1px solid $primaryColor;
+    border-radius: 8px;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
   }
 }
 
