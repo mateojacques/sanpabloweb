@@ -242,39 +242,61 @@ input {
     }
   }
 
-  .features__box {
-    padding: 70px 15px;
+  .features__section {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: auto;
+    flex-wrap: wrap;
+    background-color: $primaryColor;
+    padding: 20px;
     position: relative;
-    transition: all 1s ease;
 
-    .features__content{
-      position: absolute;
+    .features__section__title{
       width: 100%;
+      background: $secondaryColor;
+      position: absolute;
+      font-weight: 200;
+      color: $lightTextColor;
+      opacity: 0.9;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .features__box {
+      padding: 70px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
       height: auto;
-      padding: 15px;
-      background-color: $primaryColor;
-      opacity: 0.8;
-      text-align: center;
-      
-      .features__h1 {
-        font-weight: 200;
+      position: relative;
+      transition: all 1s ease;
+
+      .features__content {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        background-color: $primaryColor;
+        opacity: 0.8;
+        text-align: center;
+
+        .features__h1 {
+          font-weight: 200;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
 
-    img {
-      width: 100%;
-      height: 100%;
+    .features__box:hover {
+      cursor: default;
+      transform: scale(1.2);
     }
-  }
-
-  .features__box:hover {
-    cursor: default;
-    transform: scale(1.2);
   }
 }
 
@@ -636,20 +658,22 @@ input {
     margin: 0 auto 50px auto;
     margin-top: 50px;
 
-    .cform__h1{
+    .cform__h1 {
       color: $primaryColor;
       font-weight: 200;
       margin: 30px auto;
     }
 
-    .cform__div__names, .cform__div__contact, .cform__div__comments{
+    .cform__div__names,
+    .cform__div__contact,
+    .cform__div__comments {
       margin-bottom: 20px;
     }
 
     .cform__div__comments {
       width: 100%;
       height: auto;
-      input[type="text"]{
+      input[type="text"] {
         max-width: 100%;
         max-height: 100%;
         width: 100%;
@@ -670,11 +694,11 @@ input {
       align-items: center;
       font-size: 1.3rem;
     }
-  
+
     .cform__submit:hover {
       cursor: pointer;
     }
-  
+
     .cform__submit:active {
       background: $secondaryColorDarker;
     }
@@ -875,9 +899,14 @@ input {
 
   /* FEATURES (M) */
   #features {
+
+    .features__section{
+
+    
     .features__box {
       width: 50%;
     }
+  }
   }
 
   /*MAP (M)*/
@@ -1000,12 +1029,12 @@ input {
 
     /* FEATURES (M) */
     #features {
-      border-top: 10px solid white;
-      border-bottom: 10px solid white;
 
+      .features__section{
       .features__box {
-        width: 100%;
+        width: 95%;
       }
+    }
     }
 
     /*FORM*/
@@ -1016,17 +1045,17 @@ input {
 
     /*---------------------------CONTACT (M)--------------------------------*/
     #contact {
-      #contact-form{
-
-        .cform__div__names, .cform__div__contact {
+      #contact-form {
+        .cform__div__names,
+        .cform__div__contact {
           margin-bottom: 30px;
         }
 
-        input{
+        input {
           margin-bottom: 15px;
         }
 
-        input:last-child{
+        input:last-child {
           margin-bottom: 0px;
         }
       }
