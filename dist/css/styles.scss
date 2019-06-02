@@ -504,6 +504,93 @@ input {
   }
 }
 
+/*---------------------------SERVICES--------------------------------*/
+
+.servicesContainer{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+#services {
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+  .services__first{
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .services__second {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+#services__sidebar {
+  width: 100%;
+  height: auto;
+  background-color: $secondaryColor;
+  margin: 10px auto 10px auto;
+  margin-left: -10px;
+
+  .sidebar{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .sidebar__h1{
+      color: $primaryColor;
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+
+    .sidebar__ul{
+      list-style-type: none;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      li{
+        margin-bottom: 20px;
+      }
+
+      .sidebar__a1, .sidebar__a2{
+        color: $primaryColor;
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+
+      .sidebar__a1::after{
+        content: url('../res/book\ ico.png');
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      .sidebar__a2::after{
+        content: url('../res/stamp\ ico.png');
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    }
+
+    .sidebar__img{
+      margin-top: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* NAV (M) */
 

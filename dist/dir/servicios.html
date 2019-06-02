@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <script src="../js/main.js"></script>
+    <title>Servicios</title>
+</head>
+
+<body style="background-color: white">
+
+    <!--NAV-->
+
+    <nav id="nav">
+
+        <!--Mobile Nav-->
+
+        <div class="nav__logo__div">
+            <a href="../../index.html">
+                <img class="nav__logo__img" src="../res/san pablo logo.png" alt="Libreria San Pablo">
+            </a>
+        </div>
+
+        <div id="nav--side" class="nav--side">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="productos.html" class="nav--side__link">Productos</a>
+            <a href="sellos.html" class="nav--side__link">Sellos</a>
+            <a href="servicios.html" class="nav--side__link">Servicios</a>
+            <a href="contacto.html" class="nav--side__link">Contacto</a>
+        </div>
+
+        <button class="nav__button" onclick="openNav()">
+            <div class="nav__button__line1"></div>
+            <div class="nav__button__line2"></div>
+            <div class="nav__button__line3"></div>
+        </button>
+
+        <!--Desktop Nav-->
+
+        <div class="nav__links">
+            <ul class="nav__links__list">
+                <li class="nav__links__li"><a class="nav__links__link" href="productos.html">Productos</a></li>
+                <li class="nav__links__li"><a class="nav__links__link" href="sellos.html">Sellos</a></li>
+                <li class="nav__links__li"><a class="nav__links__link" href="servicios.html">Servicios</a></li>
+                <li class="nav__links__li"><a class="nav__links__link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container servicesContainer">
+        <section id="services">
+            <div class="services__first">
+                <h1 class="services__first__title title">Empresas, colegios y jardines</h1>
+                <hr>
+                <h2 class="services__first__desc desc">Ofrecemos una atención
+                    especializada a empresas, colegios y jardines,
+                    asesorándolos en el armado de presupuestos a su medida.
+                    Realizamos entregas a domicilio.
+                </h2>
+            </div>
+
+            <div class="services__second">
+                <h1 class="services__second__title title">Tarjeta Docente</h1>
+                <hr>
+                <h2 class="services__second__desc desc">La tarjeta
+                    docente es la credencial que acredita nuestro
+                    compromiso con el docente de atenderlo de manera
+                    diferenciada, con promociones y descuentos especiales
+                    para ellos.</h2>
+            </div>
+        </section>
+
+        <section id="services__sidebar">
+            <div class="sidebar">
+                <h1 class="sidebar__h1">Nuestros productos</h1>
+                <hr style="border-color: white;">
+                <ul class="sidebar__ul">
+                    <li>
+                        <a class="sidebar__a1" href="productos.html">Artículos de librería</a>
+                    </li>
+
+                    <li>
+                        <a class="sidebar__a2" href="sellos.html">Sellos</a>
+                    </li>
+                </ul>
+
+                <h1 class="sidebar__h1">Nuestros medios de pago</h1>
+                <hr style="border-color: white;">
+                <img src="../res/medios de pago.png" class="sidebar__img" alt="Medios de pago">
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <h3 class="footer__h3">HORARIO DE ATENCIÓN:</h3>
+        <h4 class="footer__h4">De lunes a viernes de 7 :30 a 13 y 16 a 20hs. Sábados 9 a 13 y 16:30 a 20hs. Teléfono:
+            (011) 2059 6364.
+            Estamos en Av. Cristianía 1588 – Villa Luzuriaga.</h4>
+        <h1 class="footer__h1">©2019 LIBRERIA SAN PABLO</h1>
+        <h2 class="footer__h2">Todos los derechos reservados.</h2>
+    </footer>
+</body>
+
+</html>
