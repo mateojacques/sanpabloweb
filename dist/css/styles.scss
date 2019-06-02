@@ -235,6 +235,7 @@ input {
   .features__title__div {
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
 
     .features__title {
       font-size: 2em;
@@ -252,7 +253,7 @@ input {
     padding: 20px;
     position: relative;
 
-    .features__section__title{
+    .features__section__title {
       width: 100%;
       background: $secondaryColor;
       position: absolute;
@@ -275,7 +276,7 @@ input {
 
       .features__content {
         position: absolute;
-        width: 100%;
+        width: 90%;
         height: auto;
         padding: 15px;
         background-color: $primaryColor;
@@ -705,6 +706,63 @@ input {
   }
 }
 
+/*---------------------------PAYMENT--------------------------------*/
+#payment {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .payment__logo {
+    transform: scale(0.8);
+  }
+
+  .payment__card {
+    width: 400px;
+    height: 200px;
+    background-color: $secondaryColor;
+    opacity: 0.9;
+    padding: 20px;
+    border: 2px solid $secondaryColorDarker;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.51);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .payment__card__h1 {
+      color: $lightTextColor;
+      font-weight: 200;
+      font-size: 2rem;
+    }
+
+    .payment__card__h2 {
+      color: $lightTextColor;
+      font-weight: 200;
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+
+    .payment__card__a {
+      text-decoration: none;
+      margin-top: 30px;
+      color: $secondaryColor;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 5px;
+      border-radius: 10px;
+      background: $primaryColor;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* NAV (M) */
 
@@ -899,14 +957,11 @@ input {
 
   /* FEATURES (M) */
   #features {
-
-    .features__section{
-
-    
-    .features__box {
-      width: 50%;
+    .features__section {
+      .features__box {
+        width: 50%;
+      }
     }
-  }
   }
 
   /*MAP (M)*/
@@ -1029,12 +1084,11 @@ input {
 
     /* FEATURES (M) */
     #features {
-
-      .features__section{
-      .features__box {
-        width: 95%;
+      .features__section {
+        .features__box {
+          width: 95%;
+        }
       }
-    }
     }
 
     /*FORM*/

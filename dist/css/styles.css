@@ -263,6 +263,7 @@ input {
 #features .features__title__div {
   width: 100%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #features .features__title__div .features__title {
@@ -317,7 +318,7 @@ input {
 
 #features .features__section .features__box .features__content {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 15px;
   background-color: #fff;
@@ -841,6 +842,80 @@ input {
 
 #contact #contact-form .cform__submit:active {
   background: #0e1f43;
+}
+
+/*---------------------------PAYMENT--------------------------------*/
+#payment {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#payment .payment__logo {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#payment .payment__card {
+  width: 400px;
+  height: 200px;
+  background-color: #132a5c;
+  opacity: 0.9;
+  padding: 20px;
+  border: 2px solid #0e1f43;
+  border-radius: 10px;
+  -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.51);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#payment .payment__card .payment__card__h1 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+#payment .payment__card .payment__card__h2 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+#payment .payment__card .payment__card__a {
+  text-decoration: none;
+  margin-top: 30px;
+  color: #132a5c;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 10px;
+  background: #fff;
 }
 
 @media screen and (max-width: 768px) {
