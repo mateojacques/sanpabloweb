@@ -41,6 +41,17 @@ window.onload = function () {
 window.onresize = function () {
 
     try {
+        if (desktop.matches) {
+            document.getElementById('footerServices').style.position = 'absolute';
+            document.getElementById('footerServices').style.bottom = '0';
+        } else if (notebook.matches || tablet.matches || mobile.matches){
+            document.getElementById('footerServices').style.position = "static";
+        }
+    } catch {
+        
+    }
+
+    try {
         if (mobile.matches) {
             headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
         }
