@@ -13,6 +13,15 @@ const desktop = window.matchMedia("(min-width: 1900px)");
 window.onload = function () {
 
     try {
+        if (desktop.matches) {
+            document.getElementById('footerServices').style.position = 'absolute';
+            document.getElementById('footerServices').style.bottom = '0';
+        }
+    } catch {
+        
+    }
+
+    try {
         if (mobile.matches) {
             headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
         }
