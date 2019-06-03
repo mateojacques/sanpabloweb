@@ -1207,6 +1207,22 @@ input {
     width: 80%;
     text-align: center;
   }
+  /*---------------------------SERVICES--------------------------------*/
+  .servicesContainer {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #services__sidebar {
+    width: 50%;
+    margin: -10px auto 20px auto;
+  }
   /*---------------------------CONTACT--------------------------------*/
   #contact #contact-form {
     width: 90%;
@@ -1332,6 +1348,11 @@ input {
   #form {
     width: 90%;
     text-align: center;
+  }
+  /*---------------------------SERVICES--------------------------------*/
+  #services__sidebar {
+    width: 90%;
+    margin: -10px auto 20px auto;
   }
   /*---------------------------CONTACT (M)--------------------------------*/
   #contact #contact-form .cform__div__names,

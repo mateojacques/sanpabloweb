@@ -526,7 +526,7 @@ input {
     }
   }
 
-  .form__div__submit{
+  .form__div__submit {
     width: 100%;
     height: auto;
     display: flex;
@@ -556,7 +556,7 @@ input {
   }
 }
 
-#payment__button{
+#payment__button {
   margin: 30px auto 0px auto;
   text-decoration: none;
   background: $secondaryColor;
@@ -1010,6 +1010,20 @@ input {
     text-align: center;
   }
 
+  /*---------------------------SERVICES--------------------------------*/
+
+  .servicesContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #services__sidebar {
+    width: 50%;
+    margin: -10px auto 20px auto;
+  }
+
   /*---------------------------CONTACT--------------------------------*/
   #contact #contact-form {
     width: 90%;
@@ -1121,6 +1135,13 @@ input {
       width: 90%;
       text-align: center;
     }
+
+    /*---------------------------SERVICES--------------------------------*/
+
+  #services__sidebar {
+    width: 90%;
+    margin: -10px auto 20px auto;
+  }
 
     /*---------------------------CONTACT (M)--------------------------------*/
     #contact {
