@@ -81,7 +81,7 @@
             producto.</h3>
     </section>
 
-    <form id="form" netlify>
+    <form id="form" netlify action="#">
 
         <h1 class="form__h1 title">Pedí tu sello online!</h1>
 
@@ -113,11 +113,10 @@
 
             <div class="form__div__submit">
 
-            <input mp-mode="dftl"
-            name="MP-payButton" type="submit" value="Enviar y pagar" netlify id="form__submit" class="form__submit" onclick="unlockBtn()" required>
-
-            <!--<a mp-mode="dftl"
-                name="MP-payButton" id='payment__button'>Pagar</a>-->
+            <input type="submit" value="Enviar" netlify id="form__submit" class="form__submit" onclick="unlockBtn()"
+            >
+            <a mp-mode="dftl"
+                name="MP-payButton" id='payment__button'>Pagar</a>
             <script type="text/javascript">
                 (function () { function $MPC_load() { window.$MPC_loaded !== true && (function () { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js"; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); window.$MPC_loaded = true; })(); } window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null; })();
             </script>

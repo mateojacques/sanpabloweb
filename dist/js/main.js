@@ -16,35 +16,42 @@ window.onload = function () {
         document.getElementById("payment__button").href = '';
         document.getElementById("payment__button").style.backgroundColor = 'grey';
     } catch {
-
-        
+        console.log('No "payment__button" in this page.');
     }
 
-    if (mobile.matches) {
-        headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
-    }
+    try {
+        if (mobile.matches) {
+            headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
+        }
 
-    else if (tablet.matches) {
-        headerImg[0].src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62066741%2F287897607331%2F1%2Foriginal.20190510-154016?w=1000&auto=compress&rect=0%2C226%2C900%2C450&s=48a8763469aa24c6e0bf6dc493e92a0d";
-    }
+        else if (tablet.matches) {
+            headerImg[0].src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62066741%2F287897607331%2F1%2Foriginal.20190510-154016?w=1000&auto=compress&rect=0%2C226%2C900%2C450&s=48a8763469aa24c6e0bf6dc493e92a0d";
+        }
 
-    else if (desktop.matches || notebook.matches) {
-        headerImg[0].src = "https://tb2cdn.schoolwebmasters.com/accnt_171650/site_171651/Graphics/graphic_header_AboutUs.jpg";
+        else if (desktop.matches || notebook.matches) {
+            headerImg[0].src = "https://tb2cdn.schoolwebmasters.com/accnt_171650/site_171651/Graphics/graphic_header_AboutUs.jpg";
+        }
+    } catch {
+        console.log('No header__img in this page.');
     }
 }
 
 window.onresize = function () {
 
-    if (mobile.matches) {
-        headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
-    }
+    try {
+        if (mobile.matches) {
+            headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
+        }
 
-    else if (tablet.matches) {
-        headerImg[0].src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62066741%2F287897607331%2F1%2Foriginal.20190510-154016?w=1000&auto=compress&rect=0%2C226%2C900%2C450&s=48a8763469aa24c6e0bf6dc493e92a0d";
-    }
+        else if (tablet.matches) {
+            headerImg[0].src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62066741%2F287897607331%2F1%2Foriginal.20190510-154016?w=1000&auto=compress&rect=0%2C226%2C900%2C450&s=48a8763469aa24c6e0bf6dc493e92a0d";
+        }
 
-    else if (desktop.matches || notebook.matches) {
-        headerImg[0].src = "https://tb2cdn.schoolwebmasters.com/accnt_171650/site_171651/Graphics/graphic_header_AboutUs.jpg";
+        else if (desktop.matches || notebook.matches) {
+            headerImg[0].src = "https://tb2cdn.schoolwebmasters.com/accnt_171650/site_171651/Graphics/graphic_header_AboutUs.jpg";
+        }
+    } catch {
+        console.log('No header__img in this page.');
     }
 }
 
@@ -101,6 +108,10 @@ function headerOut() {
 }
 
 function unlockBtn() {
-    document.getElementById("payment__button").href = "https://www.mercadopago.com/mla/checkout/start?pref_id=146908791-e6619a38-10f7-473c-a1a7-221d0cc6e146";
-    document.getElementById("payment__button").style.backgroundColor = '#132a5c';
+    try {
+        document.getElementById("payment__button").href = "https://www.mercadopago.com/mla/checkout/start?pref_id=146908791-e6619a38-10f7-473c-a1a7-221d0cc6e146";
+        document.getElementById("payment__button").style.backgroundColor = '#132a5c';
+    } catch {
+        console.log('No header__img in this page.');
+    }
 }
