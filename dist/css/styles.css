@@ -324,6 +324,9 @@ input {
   background-color: #fff;
   opacity: 0.8;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #features .features__section .features__box .features__content .features__h1 {
