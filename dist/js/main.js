@@ -7,7 +7,7 @@ const headerImg = document.getElementsByClassName("header__img");
 const mobile = window.matchMedia("(max-width: 468px)");
 const tablet = window.matchMedia("(max-width: 768px)");
 const notebook = window.matchMedia("(max-width: 1899px)");
-const desktop = window.matchMedia("(min-width: 1900px)");
+const desktop = window.matchMedia("(min-width: 1600px)");
 
 
 window.onload = function () {
