@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="../js/main.js"></script>
+    <title>Pago en proceso</title>
+</head>
+
+<body>
+
+    <section id="payment">
+
+            <img class="payment__logo" src="../res/san pablo logo.png" alt="San Pablo Logo">
+
+        <div class="payment__card">
+            <h1 class="payment__card__h1">Realizá tu pago</h1>
+            <h2 class="payment__card__h2">Accedé a Mercado Pago con el botón de abajo.</h2>
+            
+            <a mp-mode="dftl"
+                name="MP-payButton" id='payment__button' href="https://www.mercadopago.com/mla/checkout/start?pref_id=146908791-e6619a38-10f7-473c-a1a7-221d0cc6e146">Pagar</a>
+            <script type="text/javascript">
+                (function () { function $MPC_load() { window.$MPC_loaded !== true && (function () { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js"; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); window.$MPC_loaded = true; })(); } window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null; })();
+            </script>
+        </div> 
+            
+    </section> 
+</body> 
+</html>

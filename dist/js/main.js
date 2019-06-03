@@ -13,13 +13,6 @@ const desktop = window.matchMedia("(min-width: 1900px)");
 window.onload = function () {
 
     try {
-        document.getElementById("payment__button").href = '';
-        document.getElementById("payment__button").style.backgroundColor = 'grey';
-    } catch {
-        console.log('No "payment__button" in this page.');
-    }
-
-    try {
         if (mobile.matches) {
             headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
         }
@@ -105,13 +98,4 @@ function headerOut() {
     buttons[0].style.opacity = '0';
 
     headerImg[0].style.opacity = '1';
-}
-
-function unlockBtn() {
-    try {
-        document.getElementById("payment__button").href = "https://www.mercadopago.com/mla/checkout/start?pref_id=146908791-e6619a38-10f7-473c-a1a7-221d0cc6e146";
-        document.getElementById("payment__button").style.backgroundColor = '#132a5c';
-    } catch {
-        console.log('No header__img in this page.');
-    }
 }
