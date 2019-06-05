@@ -120,6 +120,11 @@ function headerOut() {
     headerImg[0].style.opacity = '1';
 }
 
+var isAutomatic = false;
+var isBase = false;
+var isDecorative = false;
+var isAlmoahilla = false;
+
 function modelSelect() {
     const price = document.getElementById('form__price');
     const selectModel = document.getElementById('form__select-model');
@@ -129,96 +134,220 @@ function modelSelect() {
             price.innerHTML = 0;
             break;
         case '12x30g':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 100;
             break;
         case '15x40g':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 100;
             break;
         case '18x46g':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 100;
             break;
         case '24x61g':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 100;
             break;
         case '12x30':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 230;
             break;
         case '15x40a':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 230;
             break;
         case '18x46':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 260;
             break;
         case '24x61':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 365;
             break;
         case '29x61':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 390;
             break;
         case '40x60':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 500;
             break;
         case '10x50':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 180;
             break;
         case '10x40':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 120;
             break;
         case '15x40b':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 180;
             break;
         case '20x50':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 200;
             break;
         case '10x60':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 220;
             break;
         case '20x80':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 280;
             break;
         case '25x70':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 280;
             break;
         case '30x30':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 250;
             break;
         case '30x60':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 280;
             break;
         case '40x40':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 280;
             break;
         case '40x60':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 350;
             break;
         case '40x35':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 280;
             break;
         case '55x55':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 420;
             break;
         case '60x40':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 350;
             break;
         case '90x40':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 450;
             break;
         case '90x85':
+            isBase = true;
+            isAutomatic = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 700;
             break;
         case '18x47':
+            isAutomatic = true;
+            isBase = false;
+            isDecorative = false;
+            isAlmoahilla = false;
             price.innerHTML = 300;
             break;
         case 'd40x40':
+            isDecorative = true;
+            isAutomatic = false;
+            isBase = false;
+            isAlmoahilla = false;
             price.innerHTML = 240;
             break;
         case 'a2000':
+            isDecorative = false;
+            isAutomatic = false;
+            isBase = false;
+            isAlmoahilla = true;
             price.innerHTML = 80;
             break;
         case 'a2002':
+            isDecorative = false;
+            isAutomatic = false;
+            isBase = false;
+            isAlmoahilla = true;
             price.innerHTML = 90;
             break;
         case 'a2003':
+            isDecorative = false;
+            isAutomatic = false;
+            isBase = false;
+            isAlmoahilla = true;
             price.innerHTML = 105;
             break;
     }
@@ -235,145 +364,157 @@ function lineSelect() {
         const line4 = document.getElementById('form__line4');
         const line5 = document.getElementById('form__line5');
         const line6 = document.getElementById('form__line6');
+        const lineD = document.getElementById('form__lineD');
 
         const selectLines = document.getElementById('form__select-lines');
         let linesValue = selectLines.options[selectLines.selectedIndex].value;
 
-        if (linesValue == 1) {
-            try{
-            line2.style.display = 'none';
-            line3.style.display = 'none';
-            line4.style.display = 'none';
-            line5.style.display = 'none';
-            line6.style.display = 'none';
-            
-                line2.removeAttribute('required', '');
-                line3.removeAttribute('required', '');
-                line4.removeAttribute('required', '');
-                line5.removeAttribute('required', '');
-                line6.removeAttribute('required', '');
-            } catch {}
-        } else if (linesValue == 2) {
-            if (price.innerHTML != ''){
-            price.innerHTML = parseInt(price.innerHTML) + 40;
-        }
-            line2.style.display = 'block';
-            
-            line2.setAttribute('required', '');
-            line3.setAttribute('required', '');
-            line4.setAttribute('required', '');
-            line5.setAttribute('required', '');
-            line6.setAttribute('required', '');
-            try{
-                line3.style.display = 'none';
-                line4.style.display = 'none';
-                line5.style.display = 'none';
-                line6.style.display = 'none';
-                
+        switch (linesValue) {
+            case '1':
+            case 'default':
+                try {
+                    line2.style.display = 'none';
+                    line3.style.display = 'none';
+                    line4.style.display = 'none';
+                    line5.style.display = 'none';
+                    line6.style.display = 'none';
+
+                    line2.removeAttribute('required', '');
                     line3.removeAttribute('required', '');
                     line4.removeAttribute('required', '');
                     line5.removeAttribute('required', '');
                     line6.removeAttribute('required', '');
-                } catch {}
-        } else if (linesValue == 3) {
-            if (price.innerHTML != ''){
-                price.innerHTML = parseInt(price.innerHTML) + 80;
-            }
-            line2.style.display = 'block';
-            line3.style.display = 'block';
-            
-            line2.setAttribute('required', '');
-            line3.setAttribute('required', '');
-            line4.setAttribute('required', '');
-            line5.setAttribute('required', '');
-            line6.setAttribute('required', '');
-            try{
-                line4.style.display = 'none';
-                line5.style.display = 'none';
-                line6.style.display = 'none';
-                
+                } catch { }
+                break;
+            case '2':
+                if (isAutomatic === true && price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) + 40;
+                }
+                line2.style.display = 'block';
+
+                line2.setAttribute('required', '');
+                line3.setAttribute('required', '');
+                line4.setAttribute('required', '');
+                line5.setAttribute('required', '');
+                line6.setAttribute('required', '');
+                try {
+                    line3.style.display = 'none';
+                    line4.style.display = 'none';
+                    line5.style.display = 'none';
+                    line6.style.display = 'none';
+
+                    line3.removeAttribute('required', '');
                     line4.removeAttribute('required', '');
                     line5.removeAttribute('required', '');
                     line6.removeAttribute('required', '');
-                } catch {}
-        } else if (linesValue == 4) {
-            if (price.innerHTML != ''){
-                price.innerHTML = parseInt(price.innerHTML) + 120;
-            }
-            line2.style.display = 'block';
-            line3.style.display = 'block';
-            line4.style.display = 'block';
-            
-            line2.setAttribute('required', '');
-            line3.setAttribute('required', '');
-            line4.setAttribute('required', '');
-            line5.setAttribute('required', '');
-            line6.setAttribute('required', '');
-            try{
-                line5.style.display = 'none';
-                line6.style.display = 'none';
+                } catch { }
+                break;
+            case '3':
+                if (isAutomatic === true && price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) + 80;
+                }
+                line2.style.display = 'block';
+                line3.style.display = 'block';
+
+                line2.setAttribute('required', '');
+                line3.setAttribute('required', '');
+                line4.setAttribute('required', '');
+                line5.setAttribute('required', '');
+                line6.setAttribute('required', '');
+                try {
+                    line4.style.display = 'none';
+                    line5.style.display = 'none';
+                    line6.style.display = 'none';
+
+                    line4.removeAttribute('required', '');
+                    line5.removeAttribute('required', '');
+                    line6.removeAttribute('required', '');
+                } catch { }
+                break;
+            case '4':
+                if (isAutomatic === true && price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) + 120;
+                }
+                line2.style.display = 'block';
+                line3.style.display = 'block';
+                line4.style.display = 'block';
+
+                line2.setAttribute('required', '');
+                line3.setAttribute('required', '');
+                line4.setAttribute('required', '');
+                line5.setAttribute('required', '');
+                line6.setAttribute('required', '');
+                try {
+                    line5.style.display = 'none';
+                    line6.style.display = 'none';
 
                     line5.removeAttribute('required', '');
                     line6.removeAttribute('required', '');
-                } catch {}
-        } else if (linesValue == 5) {
-            if (price.innerHTML != ''){
-                price.innerHTML = parseInt(price.innerHTML) + 160;
-            }
-            line2.style.display = 'block';
-            line3.style.display = 'block';
-            line4.style.display = 'block';
-            line5.style.display = 'block';
-            
-            line2.setAttribute('required', '');
-            line3.setAttribute('required', '');
-            line4.setAttribute('required', '');
-            line5.setAttribute('required', '');
-            line6.setAttribute('required', '');
-            try{
-                line6.style.display = 'none';
+                } catch { }
+                break;
+            case '5':
+                if (isAutomatic === true && price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) + 160;
+                }
+                line2.style.display = 'block';
+                line3.style.display = 'block';
+                line4.style.display = 'block';
+                line5.style.display = 'block';
+
+                line2.setAttribute('required', '');
+                line3.setAttribute('required', '');
+                line4.setAttribute('required', '');
+                line5.setAttribute('required', '');
+                line6.setAttribute('required', '');
+                try {
+                    line6.style.display = 'none';
 
                     line6.removeAttribute('required', '');
-                } catch {}
-        } else if (linesValue == 6) {
-            if (price.innerHTML != ''){
-                price.innerHTML = parseInt(price.innerHTML) + 200;
-            }
-            line2.style.display = 'block';
-            line3.style.display = 'block';
-            line4.style.display = 'block';
-            line5.style.display = 'block';
-            line6.style.display = 'block';
+                } catch { }
+                break;
+            case '6':
+                if (isAutomatic === true && price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) + 200;
+                }
+                line2.style.display = 'block';
+                line3.style.display = 'block';
+                line4.style.display = 'block';
+                line5.style.display = 'block';
+                line6.style.display = 'block';
 
-            line2.setAttribute('required', '');
-            line3.setAttribute('required', '');
-            line4.setAttribute('required', '');
-            line5.setAttribute('required', '');
-            line6.setAttribute('required', '');
-        }  else if (linesValue == 'reset') {
-            price.innerHTML = '';
+                line2.setAttribute('required', '');
+                line3.setAttribute('required', '');
+                line4.setAttribute('required', '');
+                line5.setAttribute('required', '');
+                line6.setAttribute('required', '');
+                break;
+            case 'reset':
+                price.innerHTML = '';
+                selectModel.selectedIndex = '0';
+                selectLines.selectedIndex = '0';
+                break;
         }
-    } catch {
+    } catch{}
+}
 
+    function drawSelect() {
+        try {
+            const price = document.getElementById('form__price');
+            const drawInput = document.getElementById('form__lineD');
+            const drawSelect = document.getElementById('form__select-drawing');
+            let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
+            if (drawSelectValue == 'true') {
+                if (price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) + 70;
+                }
+                drawInput.style.display = 'block';
+                drawInput.setAttribute('required', '');
+            } else if (drawSelectValue == 'false') {
+                if (price.innerHTML != '') {
+                    price.innerHTML = parseInt(price.innerHTML) - 70;
+                }
+                drawInput.style.display = 'none';
+                drawInput.removeAttribute('required', '');
+            }
+        } catch{ }
     }
-}
-
-function drawSelect() {
-    try {
-        const price = document.getElementById('form__price');
-        const drawInput = document.getElementById('form__lineD');
-        const drawSelect = document.getElementById('form__select-drawing');
-        let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
-        if (drawSelectValue == 'true') {
-            if (price.innerHTML != ''){
-                price.innerHTML = parseInt(price.innerHTML) + 70;
-            }
-            drawInput.style.display = 'block';
-        } else {
-            if (price.innerHTML != ''){
-                price.innerHTML = parseInt(price.innerHTML) - 70;
-            }
-            drawInput.style.display = 'none';
-        }
-    } catch{ }
-}
