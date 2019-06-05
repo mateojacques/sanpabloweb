@@ -558,6 +558,20 @@ input {
     }
   }
 
+  .form__div__price {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px 0px 10px 38px;
+    display: flex;
+
+    .form__price__title, .form__price {
+      color: $lightTextColor;
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+  }
+
   .form__div__submit {
     width: 100%;
     height: auto;
@@ -1040,6 +1054,10 @@ input {
   #form {
     width: 80%;
     text-align: center;
+
+    .form__div__price {
+      padding: 10px;
+    }
   }
 
   /*---------------------------SERVICES--------------------------------*/

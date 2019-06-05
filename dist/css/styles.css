@@ -665,6 +665,22 @@ input {
   height: 200px;
 }
 
+#form .form__div__price {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding: 10px 0px 10px 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#form .form__div__price .form__price__title, #form .form__div__price .form__price {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
 #form .form__div__submit {
   width: 100%;
   height: auto;
@@ -1249,6 +1265,9 @@ input {
   #form {
     width: 80%;
     text-align: center;
+  }
+  #form .form__div__price {
+    padding: 10px;
   }
   /*---------------------------SERVICES--------------------------------*/
   .servicesContainer {

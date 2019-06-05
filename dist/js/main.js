@@ -18,7 +18,7 @@ window.onload = function () {
             document.getElementById('footerServices').style.bottom = '0';
         }
     } catch {
-        
+
     }
 
     try {
@@ -44,11 +44,11 @@ window.onresize = function () {
         if (desktop.matches) {
             document.getElementById('footerServices').style.position = 'absolute';
             document.getElementById('footerServices').style.bottom = '0';
-        } else if (notebook.matches || tablet.matches || mobile.matches){
+        } else if (notebook.matches || tablet.matches || mobile.matches) {
             document.getElementById('footerServices').style.position = "static";
         }
     } catch {
-        
+
     }
 
     try {
@@ -120,9 +120,116 @@ function headerOut() {
     headerImg[0].style.opacity = '1';
 }
 
-function lineSelect(){
+function modelSelect() {
+    const price = document.getElementById('form__price');
+    const selectModel = document.getElementById('form__select-model');
+    let modelValue = selectModel.options[selectModel.selectedIndex].value;
+    switch (modelValue) {
+        case 'default':
+            price.innerHTML = 0;
+            break;
+        case '12x30g':
+            price.innerHTML = 100;
+            break;
+        case '15x40g':
+            price.innerHTML = 100;
+            break;
+        case '18x46g':
+            price.innerHTML = 100;
+            break;
+        case '24x61g':
+            price.innerHTML = 100;
+            break;
+        case '12x30':
+            price.innerHTML = 230;
+            break;
+        case '15x40a':
+            price.innerHTML = 230;
+            break;
+        case '18x46':
+            price.innerHTML = 260;
+            break;
+        case '24x61':
+            price.innerHTML = 365;
+            break;
+        case '29x61':
+            price.innerHTML = 390;
+            break;
+        case '40x60':
+            price.innerHTML = 500;
+            break;
+        case '10x50':
+            price.innerHTML = 180;
+            break;
+        case '10x40':
+            price.innerHTML = 120;
+            break;
+        case '15x40b':
+            price.innerHTML = 180;
+            break;
+        case '20x50':
+            price.innerHTML = 200;
+            break;
+        case '10x60':
+            price.innerHTML = 220;
+            break;
+        case '20x80':
+            price.innerHTML = 280;
+            break;
+        case '25x70':
+            price.innerHTML = 280;
+            break;
+        case '30x30':
+            price.innerHTML = 250;
+            break;
+        case '30x60':
+            price.innerHTML = 280;
+            break;
+        case '40x40':
+            price.innerHTML = 280;
+            break;
+        case '40x60':
+            price.innerHTML = 350;
+            break;
+        case '40x35':
+            price.innerHTML = 280;
+            break;
+        case '55x55':
+            price.innerHTML = 420;
+            break;
+        case '60x40':
+            price.innerHTML = 350;
+            break;
+        case '90x40':
+            price.innerHTML = 450;
+            break;
+        case '90x85':
+            price.innerHTML = 700;
+            break;
+        case '18x47':
+            price.innerHTML = 300;
+            break;
+        case 'd40x40':
+            price.innerHTML = 240;
+            break;
+        case 'a2000':
+            price.innerHTML = 80;
+            break;
+        case 'a2002':
+            price.innerHTML = 90;
+            break;
+        case 'a2003':
+            price.innerHTML = 105;
+            break;
+    }
+}
+
+function lineSelect() {
     try {
-        const line1 = document.getElementById('form__line1');
+        const price = document.getElementById('form__price');
+        const selectModel = document.getElementById('form__select-model');
+        let modelValue = selectModel.options[selectModel.selectedIndex].value;
+
         const line2 = document.getElementById('form__line2');
         const line3 = document.getElementById('form__line3');
         const line4 = document.getElementById('form__line4');
@@ -138,41 +245,65 @@ function lineSelect(){
             line4.style.display = 'none';
             line5.style.display = 'none';
             line6.style.display = 'none';
-        } else if (linesValue == 2){
+        } else if (linesValue == 2) {
+            if (price.innerHTML != ''){
+            price.innerHTML = parseInt(price.innerHTML) + 40;
+        }
             line2.style.display = 'block';
-        } else if (linesValue == 3){
+        } else if (linesValue == 3) {
+            if (price.innerHTML != ''){
+                price.innerHTML = parseInt(price.innerHTML) + 80;
+            }
             line2.style.display = 'block';
             line3.style.display = 'block';
-        } else if (linesValue == 4){
+        } else if (linesValue == 4) {
+            if (price.innerHTML != ''){
+                price.innerHTML = parseInt(price.innerHTML) + 120;
+            }
             line2.style.display = 'block';
             line3.style.display = 'block';
             line4.style.display = 'block';
-        } else if (linesValue == 5){
+        } else if (linesValue == 5) {
+            if (price.innerHTML != ''){
+                price.innerHTML = parseInt(price.innerHTML) + 160;
+            }
             line2.style.display = 'block';
             line3.style.display = 'block';
             line4.style.display = 'block';
             line5.style.display = 'block';
-        } else if (linesValue == 6){
+        } else if (linesValue == 6) {
+            if (price.innerHTML != ''){
+                price.innerHTML = parseInt(price.innerHTML) + 200;
+            }
             line2.style.display = 'block';
             line3.style.display = 'block';
             line4.style.display = 'block';
             line5.style.display = 'block';
             line6.style.display = 'block';
+        }  else if (linesValue == 'reset') {
+            price.innerHTML = '';
         }
     } catch {
-            
+
     }
 }
 
-function drawSelect(){
-    try{
+function drawSelect() {
+    try {
+        const price = document.getElementById('form__price');
         const drawInput = document.getElementById('form__lineD');
         const drawSelect = document.getElementById('form__select-drawing');
         let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
         if (drawSelectValue == 'true') {
+            if (price.innerHTML != ''){
+                price.innerHTML = parseInt(price.innerHTML) + 70;
+            }
             drawInput.style.display = 'block';
         } else {
+            if (price.innerHTML != ''){
+                price.innerHTML = parseInt(price.innerHTML) - 70;
+            }
             drawInput.style.display = 'none';
         }
-    } catch{}
+    } catch{ }
 }
