@@ -240,22 +240,62 @@ function lineSelect() {
         let linesValue = selectLines.options[selectLines.selectedIndex].value;
 
         if (linesValue == 1) {
+            try{
             line2.style.display = 'none';
             line3.style.display = 'none';
             line4.style.display = 'none';
             line5.style.display = 'none';
             line6.style.display = 'none';
+            
+                line2.removeAttribute('required', '');
+                line3.removeAttribute('required', '');
+                line4.removeAttribute('required', '');
+                line5.removeAttribute('required', '');
+                line6.removeAttribute('required', '');
+            } catch {}
         } else if (linesValue == 2) {
             if (price.innerHTML != ''){
             price.innerHTML = parseInt(price.innerHTML) + 40;
         }
             line2.style.display = 'block';
+            
+            line2.setAttribute('required', '');
+            line3.setAttribute('required', '');
+            line4.setAttribute('required', '');
+            line5.setAttribute('required', '');
+            line6.setAttribute('required', '');
+            try{
+                line3.style.display = 'none';
+                line4.style.display = 'none';
+                line5.style.display = 'none';
+                line6.style.display = 'none';
+                
+                    line3.removeAttribute('required', '');
+                    line4.removeAttribute('required', '');
+                    line5.removeAttribute('required', '');
+                    line6.removeAttribute('required', '');
+                } catch {}
         } else if (linesValue == 3) {
             if (price.innerHTML != ''){
                 price.innerHTML = parseInt(price.innerHTML) + 80;
             }
             line2.style.display = 'block';
             line3.style.display = 'block';
+            
+            line2.setAttribute('required', '');
+            line3.setAttribute('required', '');
+            line4.setAttribute('required', '');
+            line5.setAttribute('required', '');
+            line6.setAttribute('required', '');
+            try{
+                line4.style.display = 'none';
+                line5.style.display = 'none';
+                line6.style.display = 'none';
+                
+                    line4.removeAttribute('required', '');
+                    line5.removeAttribute('required', '');
+                    line6.removeAttribute('required', '');
+                } catch {}
         } else if (linesValue == 4) {
             if (price.innerHTML != ''){
                 price.innerHTML = parseInt(price.innerHTML) + 120;
@@ -263,6 +303,19 @@ function lineSelect() {
             line2.style.display = 'block';
             line3.style.display = 'block';
             line4.style.display = 'block';
+            
+            line2.setAttribute('required', '');
+            line3.setAttribute('required', '');
+            line4.setAttribute('required', '');
+            line5.setAttribute('required', '');
+            line6.setAttribute('required', '');
+            try{
+                line5.style.display = 'none';
+                line6.style.display = 'none';
+
+                    line5.removeAttribute('required', '');
+                    line6.removeAttribute('required', '');
+                } catch {}
         } else if (linesValue == 5) {
             if (price.innerHTML != ''){
                 price.innerHTML = parseInt(price.innerHTML) + 160;
@@ -271,6 +324,17 @@ function lineSelect() {
             line3.style.display = 'block';
             line4.style.display = 'block';
             line5.style.display = 'block';
+            
+            line2.setAttribute('required', '');
+            line3.setAttribute('required', '');
+            line4.setAttribute('required', '');
+            line5.setAttribute('required', '');
+            line6.setAttribute('required', '');
+            try{
+                line6.style.display = 'none';
+
+                    line6.removeAttribute('required', '');
+                } catch {}
         } else if (linesValue == 6) {
             if (price.innerHTML != ''){
                 price.innerHTML = parseInt(price.innerHTML) + 200;
@@ -280,6 +344,12 @@ function lineSelect() {
             line4.style.display = 'block';
             line5.style.display = 'block';
             line6.style.display = 'block';
+
+            line2.setAttribute('required', '');
+            line3.setAttribute('required', '');
+            line4.setAttribute('required', '');
+            line5.setAttribute('required', '');
+            line6.setAttribute('required', '');
         }  else if (linesValue == 'reset') {
             price.innerHTML = '';
         }
