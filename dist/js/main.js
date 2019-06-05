@@ -502,19 +502,20 @@ function drawSelect() {
         const price = document.getElementById('form__price');
         const drawInput = document.getElementById('form__lineD');
         const drawSelect = document.getElementById('form__select-drawing');
+        const formDrawing = document.querySelector('.form__drawing');
         let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
         if (drawSelectValue == 'true') {
             if (parseInt(price.value) > 0 && price.value != '') {
                 price.value = parseInt(price.value) + 70;
             }
             drawInput.style.display = 'block';
-            drawInput.setAttribute('required', '');
+            formDrawing.style.display = 'block';
         } else if (drawSelectValue == 'false') {
             if (parseInt(price.value) > 0 && price.value != '') {
                 price.value = parseInt(price.value) - 70;
             }
             drawInput.style.display = 'none';
-            drawInput.removeAttribute('required', '');
+            formDrawing.style.display = 'none';
         }
     } catch{ }
 }

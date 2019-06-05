@@ -542,6 +542,26 @@ input {
     border-radius: 5px;
     border-color: $secondaryColor;
   }
+
+  .form__drawing {
+    display: none;
+    width: 70%;
+    background: $secondaryColor;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+
+  #drawingsCatalog {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+
+  #form__file{
+    margin-top: 20px;
+   color: white;
+  }
 }
 
   .form__div__comments {

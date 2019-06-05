@@ -647,6 +647,26 @@ input {
   border-color: #132a5c;
 }
 
+#form .form__div__select .form__drawing {
+  display: none;
+  width: 70%;
+  background: #132a5c;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+#form .form__div__select #drawingsCatalog {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+#form .form__div__select #form__file {
+  margin-top: 20px;
+  color: white;
+}
+
 #form .form__div__comments {
   width: 100%;
   height: auto;
