@@ -673,12 +673,24 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 #form .form__div__price .form__price__title, #form .form__div__price .form__price {
   color: #fff;
   font-weight: 200;
   font-size: 1.5rem;
+}
+
+#form .form__div__price #form__price {
+  background: none;
+  border: none;
+  width: 75px;
 }
 
 #form .form__div__submit {

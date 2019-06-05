@@ -131,224 +131,224 @@ function modelSelect() {
     let modelValue = selectModel.options[selectModel.selectedIndex].value;
     switch (modelValue) {
         case 'default':
-            price.innerHTML = 0;
+            price.value = 0;
             break;
         case '12x30g':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 100;
+            price.value = 100;
             break;
         case '15x40g':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 100;
+            price.value = 100;
             break;
         case '18x46g':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 100;
+            price.value = 100;
             break;
         case '24x61g':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 100;
+            price.value = 100;
             break;
         case '12x30':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 230;
+            price.value = 230;
             break;
         case '15x40a':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 230;
+            price.value = 230;
             break;
         case '18x46':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 260;
+            price.value = 260;
             break;
         case '24x61':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 365;
+            price.value = 365;
             break;
         case '29x61':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 390;
+            price.value = 390;
             break;
         case '40x60':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 500;
+            price.value = 500;
             break;
         case '10x50':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 180;
+            price.value = 180;
             break;
         case '10x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 120;
+            price.value = 120;
             break;
         case '15x40b':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 180;
+            price.value = 180;
             break;
         case '20x50':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 200;
+            price.value = 200;
             break;
         case '10x60':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 220;
+            price.value = 220;
             break;
         case '20x80':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 280;
+            price.value = 280;
             break;
         case '25x70':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 280;
+            price.value = 280;
             break;
         case '30x30':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 250;
+            price.value = 250;
             break;
         case '30x60':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 280;
+            price.value = 280;
             break;
         case '40x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 280;
+            price.value = 280;
             break;
         case '40x60':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 350;
+            price.value = 350;
             break;
         case '40x35':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 280;
+            price.value = 280;
             break;
         case '55x55':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 420;
+            price.value = 420;
             break;
         case '60x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 350;
+            price.value = 350;
             break;
         case '90x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 450;
+            price.value = 450;
             break;
         case '90x85':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 700;
+            price.value = 700;
             break;
         case '18x47':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
-            price.innerHTML = 300;
+            price.value = 300;
             break;
         case 'd40x40':
             isDecorative = true;
             isAutomatic = false;
             isBase = false;
             isAlmoahilla = false;
-            price.innerHTML = 240;
+            price.value = 240;
             break;
         case 'a2000':
             isDecorative = false;
             isAutomatic = false;
             isBase = false;
             isAlmoahilla = true;
-            price.innerHTML = 80;
+            price.value = 80;
             break;
         case 'a2002':
             isDecorative = false;
             isAutomatic = false;
             isBase = false;
             isAlmoahilla = true;
-            price.innerHTML = 90;
+            price.value = 90;
             break;
         case 'a2003':
             isDecorative = false;
             isAutomatic = false;
             isBase = false;
             isAlmoahilla = true;
-            price.innerHTML = 105;
+            price.value = 105;
             break;
     }
 }
@@ -387,8 +387,8 @@ function lineSelect() {
                 } catch { }
                 break;
             case '2':
-                if (isAutomatic === true && price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) + 40;
+                if (isAutomatic === true && parseInt(price.value) > 0) {
+                    price.value = parseInt(price.value) + 40;
                 }
                 line2.style.display = 'block';
 
@@ -410,8 +410,8 @@ function lineSelect() {
                 } catch { }
                 break;
             case '3':
-                if (isAutomatic === true && price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) + 80;
+                if (isAutomatic === true && parseInt(price.value) > 0) {
+                    price.value = parseInt(price.value) + 80;
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -432,8 +432,8 @@ function lineSelect() {
                 } catch { }
                 break;
             case '4':
-                if (isAutomatic === true && price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) + 120;
+                if (isAutomatic === true && parseInt(price.value) > 0) {
+                    price.value = parseInt(price.value) + 120;
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -453,8 +453,8 @@ function lineSelect() {
                 } catch { }
                 break;
             case '5':
-                if (isAutomatic === true && price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) + 160;
+                if (isAutomatic === true && parseInt(price.value) > 0) {
+                    price.value = parseInt(price.value) + 160;
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -473,8 +473,8 @@ function lineSelect() {
                 } catch { }
                 break;
             case '6':
-                if (isAutomatic === true && price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) + 200;
+                if (isAutomatic === true && parseInt(price.value) > 0) {
+                    price.value = parseInt(price.value) + 200;
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -489,32 +489,32 @@ function lineSelect() {
                 line6.setAttribute('required', '');
                 break;
             case 'reset':
-                price.innerHTML = '';
+                price.value = '';
                 selectModel.selectedIndex = '0';
                 selectLines.selectedIndex = '0';
                 break;
         }
-    } catch{}
+    } catch{ }
 }
 
-    function drawSelect() {
-        try {
-            const price = document.getElementById('form__price');
-            const drawInput = document.getElementById('form__lineD');
-            const drawSelect = document.getElementById('form__select-drawing');
-            let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
-            if (drawSelectValue == 'true') {
-                if (price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) + 70;
-                }
-                drawInput.style.display = 'block';
-                drawInput.setAttribute('required', '');
-            } else if (drawSelectValue == 'false') {
-                if (price.innerHTML != '') {
-                    price.innerHTML = parseInt(price.innerHTML) - 70;
-                }
-                drawInput.style.display = 'none';
-                drawInput.removeAttribute('required', '');
+function drawSelect() {
+    try {
+        const price = document.getElementById('form__price');
+        const drawInput = document.getElementById('form__lineD');
+        const drawSelect = document.getElementById('form__select-drawing');
+        let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
+        if (drawSelectValue == 'true') {
+            if (parseInt(price.value) > 0 && price.value != '') {
+                price.value = parseInt(price.value) + 70;
             }
-        } catch{ }
-    }
+            drawInput.style.display = 'block';
+            drawInput.setAttribute('required', '');
+        } else if (drawSelectValue == 'false') {
+            if (parseInt(price.value) > 0 && price.value != '') {
+                price.value = parseInt(price.value) - 70;
+            }
+            drawInput.style.display = 'none';
+            drawInput.removeAttribute('required', '');
+        }
+    } catch{ }
+}

@@ -564,13 +564,21 @@ input {
     margin-top: 30px;
     padding: 10px 0px 10px 38px;
     display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 
     .form__price__title, .form__price {
       color: $lightTextColor;
       font-weight: 200;
       font-size: 1.5rem;
     }
+
+    #form__price{
+      background: none;
+      border: none;
+      width: 75px;
   }
+}
 
   .form__div__submit {
     width: 100%;
