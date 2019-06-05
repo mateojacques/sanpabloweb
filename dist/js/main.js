@@ -119,3 +119,60 @@ function headerOut() {
 
     headerImg[0].style.opacity = '1';
 }
+
+function lineSelect(){
+    try {
+        const line1 = document.getElementById('form__line1');
+        const line2 = document.getElementById('form__line2');
+        const line3 = document.getElementById('form__line3');
+        const line4 = document.getElementById('form__line4');
+        const line5 = document.getElementById('form__line5');
+        const line6 = document.getElementById('form__line6');
+
+        const selectLines = document.getElementById('form__select-lines');
+        let linesValue = selectLines.options[selectLines.selectedIndex].value;
+
+        if (linesValue == 1) {
+            line2.style.display = 'none';
+            line3.style.display = 'none';
+            line4.style.display = 'none';
+            line5.style.display = 'none';
+            line6.style.display = 'none';
+        } else if (linesValue == 2){
+            line2.style.display = 'block';
+        } else if (linesValue == 3){
+            line2.style.display = 'block';
+            line3.style.display = 'block';
+        } else if (linesValue == 4){
+            line2.style.display = 'block';
+            line3.style.display = 'block';
+            line4.style.display = 'block';
+        } else if (linesValue == 5){
+            line2.style.display = 'block';
+            line3.style.display = 'block';
+            line4.style.display = 'block';
+            line5.style.display = 'block';
+        } else if (linesValue == 6){
+            line2.style.display = 'block';
+            line3.style.display = 'block';
+            line4.style.display = 'block';
+            line5.style.display = 'block';
+            line6.style.display = 'block';
+        }
+    } catch {
+            
+    }
+}
+
+function drawSelect(){
+    try{
+        const drawInput = document.getElementById('form__lineD');
+        const drawSelect = document.getElementById('form__select-drawing');
+        let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
+        if (drawSelectValue == 'true') {
+            drawInput.style.display = 'block';
+        } else {
+            drawInput.style.display = 'none';
+        }
+    } catch{}
+}

@@ -97,14 +97,64 @@
                 <input type="email" class="form__email" name="email" placeholder="E-mail (opcional)">
             </div>
 
+            <div class="form__div__select">
+
+                <h3>Elegí tu modelo:</h3>
+
+                <select name="select-model" class="form__select" required>
+                    <option class="form__select__option" value="12x30" selected>12x30 C/AUTOMATICO</option>
+                    <option class="form__select__option" value="15x40">15x40 C/AUTOMATICO</option>
+                    <option class="form__select__option" value="18x46">18x46 C/AUTOMATICO</option>
+                    <option class="form__select__option" value="24x61">24x61 C/AUTOMATICO</option>
+                    <option class="form__select__option" value="29x61">29x61 C/AUTOMATICO</option>
+                    <option class="form__select__option" value="40x60">40x60 C/AUTOMATICO</option>
+                    <option class="form__select__option" value="10x50">BASE 10x50 RECTANGULAR</option>
+                    <option class="form__select__option" value="10x40">BASE 10x40 RECTANGULAR</option>
+                    <option class="form__select__option" value="15x40">BASE 15x40 RECTANGULAR</option>
+                    <option class="form__select__option" value="20x50">BASE 20x50 RECTANGULAR</option>
+                    <option class="form__select__option" value="20x60">BASE 20x60 RECTANGULAR</option>
+                    <option class="form__select__option" value="20x80">BASE 20x80 RECTANGULAR</option>
+                    <option class="form__select__option" value="25x70">BASE 25x70 RECTANGULAR</option>
+                    <option class="form__select__option" value="30x30">BASE 30x30 REDONDA</option>
+                    <option class="form__select__option" value="30x60">BASE 30x60 RECTANGULAR</option>
+                    <option class="form__select__option" value="40x40">BASE 40x40 CUADRADA</option>
+                    <option class="form__select__option" value="40x60">BASE 40x60 RECTANGULAR</option>
+                    <option class="form__select__option" value="40x35">BASE 40x35 OVALADA</option>
+                    <option class="form__select__option" value="55x55">BASE 55x55 REDONDA</option>
+                    <option class="form__select__option" value="60x40">BASE 60x40 OVALADA</option>
+                    <option class="form__select__option" value="90x40">BASE 90x40 RECTANGULAR</option>
+                    <option class="form__select__option" value="90x85">BASE 90x85</option>
+                </select>
+
+                <h3>¿Cuantas líneas tiene tu sello?</h3>
+
+                <select name="select-lines" id="form__select-lines" class="form__select" onchange="lineSelect()" required>
+                    <option class="form__select__option" value="1" selected>1</option>
+                    <option class="form__select__option" value="2">2</option>
+                    <option class="form__select__option" value="3">3</option>
+                    <option class="form__select__option" value="4">4</option>
+                    <option class="form__select__option" value="5">5</option>
+                    <option class="form__select__option" value="6">6</option>
+                </select>
+
+                <h3>¿Tu sello tiene un logo o dibujo?</h3>
+
+                <select name="select-drawing" id="form__select-drawing" class="form__select" onchange="drawSelect()" required>
+                    <option class="form__select__option" value="false" selected>NO</option>
+                    <option class="form__select__option" value="true">SI</option>
+                </select>
+            </div>
 
             <div class="form__div__lines">
-                <input type="text" class="form__line" name="line1" required placeholder="Linea 1 (requerido)">
-                <input type="text" class="form__line" name="line2" placeholder="Linea 2 (opcional)">
-                <input type="text" class="form__line" name="line3" placeholder="Linea 3 (opcional)">
-                <input type="text" class="form__line" name="line4" placeholder="Linea 4 (opcional)">
-                <input type="text" class="form__line" name="line5" placeholder="Linea 5 (opcional)">
-                <input type="number" class="form__line" name="drawing" placeholder="N° de dibujo (opcional)">
+                <input type="text" id="form__line1" class="form__line" name="line1" required
+                    placeholder="Linea 1 (requerido)">
+                <input type="text" id="form__line2" class="form__line" name="line2" required placeholder="Linea 2 (requerido)">
+                <input type="text" id="form__line3" class="form__line" name="line3" required placeholder="Linea 3 (requerido)">
+                <input type="text" id="form__line4" class="form__line" name="line4" required placeholder="Linea 4 (requerido)">
+                <input type="text" id="form__line5" class="form__line" name="line5" required placeholder="Linea 5 (requerido)">
+                <input type="text" id="form__line6" class="form__line" name="line6" required placeholder="Linea 6 (requerido)">
+                <input type="number" id="form__lineD" class="form__line" required name="drawing"
+                    placeholder="N° de dibujo (requerido)">
             </div>
 
             <div class="form__div__comments">
@@ -114,7 +164,7 @@
 
             <div class="form__div__submit">
 
-            <input type="submit" value="Enviar" netlify id="form__submit" class="form__submit">
+                <input type="submit" value="Enviar" netlify id="form__submit" class="form__submit">
 
             </div>
         </div>

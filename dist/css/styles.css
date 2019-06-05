@@ -593,10 +593,17 @@ input {
   height: auto;
   padding-top: 30px;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#form .form__div__lines #form__line2, #form .form__div__lines #form__line3, #form .form__div__lines #form__line4, #form .form__div__lines #form__line5, #form .form__div__lines #form__line6, #form .form__div__lines #form__lineD {
+  display: none;
 }
 
 #form .form__div__lines .form__line {
@@ -604,11 +611,47 @@ input {
   margin: 0px auto 20px auto;
 }
 
+#form .form__div__select {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#form .form__div__select h3 {
+  color: #fff;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+#form .form__div__select .form__select {
+  width: 88%;
+  margin: 15px auto;
+  height: 35px;
+  font-size: 1rem;
+  padding-left: 5px;
+  border-radius: 5px;
+  border-color: #132a5c;
+}
+
 #form .form__div__comments {
   width: 100%;
   height: auto;
-  padding-top: 30px;
   margin: 0 auto;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1209,8 +1252,8 @@ input {
   }
   /*---------------------------SERVICES--------------------------------*/
   .servicesContainer {
-    width: 100%;
     height: auto;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
