@@ -3,7 +3,7 @@ const buttons = document.getElementsByClassName('payment__buttons');
 
 window.onload = () => {
 
-    console.log(price);
+    console.log(`Precio a pagar: ${price}`);
 
     switch (price) {
         case '80':
