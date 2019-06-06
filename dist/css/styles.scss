@@ -645,6 +645,22 @@ input {
   font-size: 1.3rem;
 }
 
+.payment__buttons {
+  margin: 30px auto 0px auto;
+  text-decoration: none;
+  background: $secondaryColor;
+  border-style: none;
+  color: $lightTextColor;
+  border: 1px solid $primaryColor;
+  border-radius: 8px;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  display: none;
+}
+
 /*---------------------------SERVICES--------------------------------*/
 
 .servicesContainer {

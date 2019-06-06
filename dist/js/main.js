@@ -519,3 +519,9 @@ function drawSelect() {
         }
     } catch{ }
 }
+
+function submitData() {
+    const price = document.getElementById('form__price');
+    localStorage.setItem('price', price.value);
+    console.log(localStorage);
+}

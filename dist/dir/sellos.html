@@ -193,12 +193,12 @@
 
             <div class="form__div__price">
                 <h1 class="form__price__title">Precio: $</h1>
-                <input type="text" name="price" id="form__price" class="form__price" onkeypress="return false;"/>
+                <input type="text" name="price" id="form__price" class="form__price" onchange="submitData()"/>
             </div>
 
             <div class="form__div__submit">
 
-                <input type="submit" value="Enviar" netlify id="form__submit" class="form__submit">
+                <input type="submit" value="Enviar" netlify id="form__submit" onclick="submitData()" class="form__submit"/>
 
             </div>
         </div>
