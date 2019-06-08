@@ -1366,7 +1366,7 @@ input {
   }
   .form__drawing {
     width: 90%;
-    padding: 20px;
+    padding: 20px !important;
     overflow-x: hidden;
   }
   /*---------------------------SERVICES--------------------------------*/
