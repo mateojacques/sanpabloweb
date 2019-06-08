@@ -353,6 +353,8 @@ function modelSelect() {
     }
 }
 
+var previousValue = '';
+
 function lineSelect() {
     try {
         const price = document.getElementById('form__price');
@@ -372,6 +374,7 @@ function lineSelect() {
         switch (linesValue) {
             case '1':
             case 'default':
+                previousValue = linesValue;
                 try {
                     line2.style.display = 'none';
                     line3.style.display = 'none';
@@ -388,7 +391,27 @@ function lineSelect() {
                 break;
             case '2':
                 if (isAutomatic === true && parseInt(price.value) > 0) {
-                    price.value = parseInt(price.value) + 40;
+                    switch (previousValue) {
+                        case '1':
+                        case 'default':
+                        case '':
+                            price.value = parseInt(price.value) + 40;
+                            break;
+                        case '3':
+                            price.value = parseInt(price.value) - 40;
+                            break;
+                        case '4':
+                            price.value = parseInt(price.value) - 80;
+                            break;
+                        case '5':
+                            price.value = parseInt(price.value) - 120;
+                            break;
+                        case '6':
+                            price.value = parseInt(price.value) - 160;
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 line2.style.display = 'block';
 
@@ -397,6 +420,7 @@ function lineSelect() {
                 line4.setAttribute('required', '');
                 line5.setAttribute('required', '');
                 line6.setAttribute('required', '');
+                previousValue = linesValue;
                 try {
                     line3.style.display = 'none';
                     line4.style.display = 'none';
@@ -411,7 +435,28 @@ function lineSelect() {
                 break;
             case '3':
                 if (isAutomatic === true && parseInt(price.value) > 0) {
-                    price.value = parseInt(price.value) + 80;
+                    switch (previousValue) {
+                        case '1':
+                        case 'default':
+                        case '':
+                            price.value = parseInt(price.value) + 80;
+                            break;
+                        case '2':
+                            price.value = parseInt(price.value) + 40;
+                            break;
+                        case '4':
+                            price.value = parseInt(price.value) - 40;
+                            break;
+                        case '5':
+                            price.value = parseInt(price.value) - 80;
+                            break;
+                        case '6':
+                            price.value = parseInt(price.value) - 120;
+                            break;
+                        default:
+                            break;
+                    }
+
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -421,6 +466,7 @@ function lineSelect() {
                 line4.setAttribute('required', '');
                 line5.setAttribute('required', '');
                 line6.setAttribute('required', '');
+                previousValue = linesValue;
                 try {
                     line4.style.display = 'none';
                     line5.style.display = 'none';
@@ -433,7 +479,27 @@ function lineSelect() {
                 break;
             case '4':
                 if (isAutomatic === true && parseInt(price.value) > 0) {
-                    price.value = parseInt(price.value) + 120;
+                    switch (previousValue) {
+                        case '1':
+                        case 'default':
+                        case '':
+                            price.value = parseInt(price.value) + 120;
+                            break;
+                        case '2':
+                            price.value = parseInt(price.value) + 80;
+                            break;
+                        case '3':
+                            price.value = parseInt(price.value) + 40;
+                            break;
+                        case '5':
+                            price.value = parseInt(price.value) - 40;
+                            break;
+                        case '6':
+                            price.value = parseInt(price.value) - 80;
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -444,6 +510,7 @@ function lineSelect() {
                 line4.setAttribute('required', '');
                 line5.setAttribute('required', '');
                 line6.setAttribute('required', '');
+                previousValue = linesValue;
                 try {
                     line5.style.display = 'none';
                     line6.style.display = 'none';
@@ -454,7 +521,27 @@ function lineSelect() {
                 break;
             case '5':
                 if (isAutomatic === true && parseInt(price.value) > 0) {
-                    price.value = parseInt(price.value) + 160;
+                    switch (previousValue) {
+                        case '1':
+                        case 'default':
+                        case '':
+                            price.value = parseInt(price.value) + 160;
+                            break;
+                        case '2':
+                            price.value = parseInt(price.value) + 120;
+                            break;
+                        case '3':
+                            price.value = parseInt(price.value) + 80;
+                            break;
+                        case '4':
+                            price.value = parseInt(price.value) + 40;
+                            break;
+                        case '6':
+                            price.value = parseInt(price.value) - 40;
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -466,6 +553,7 @@ function lineSelect() {
                 line4.setAttribute('required', '');
                 line5.setAttribute('required', '');
                 line6.setAttribute('required', '');
+                previousValue = linesValue;
                 try {
                     line6.style.display = 'none';
 
@@ -474,7 +562,27 @@ function lineSelect() {
                 break;
             case '6':
                 if (isAutomatic === true && parseInt(price.value) > 0) {
-                    price.value = parseInt(price.value) + 200;
+                    switch (previousValue) {
+                        case '1':
+                        case 'default':
+                        case '':
+                            price.value = parseInt(price.value) + 200;
+                            break;
+                        case '2':
+                            price.value = parseInt(price.value) + 160;
+                            break;
+                        case '3':
+                            price.value = parseInt(price.value) + 120;
+                            break;
+                        case '4':
+                            price.value = parseInt(price.value) + 80;
+                            break;
+                        case '5':
+                            price.value = parseInt(price.value) + 40;
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 line2.style.display = 'block';
                 line3.style.display = 'block';
@@ -487,6 +595,7 @@ function lineSelect() {
                 line4.setAttribute('required', '');
                 line5.setAttribute('required', '');
                 line6.setAttribute('required', '');
+                previousValue = linesValue;
                 break;
             case 'reset':
                 price.value = '';
