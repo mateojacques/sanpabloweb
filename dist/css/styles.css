@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* VARIABLES */
 /*GLOBAL*/
+@import url("//fonts.googleapis.com/icon?family=Material+Icons");
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +48,6 @@ input {
   font-size: 1rem;
   padding-left: 5px;
   border-radius: 5px;
-  border-color: #132a5c;
 }
 
 /*---------------------------INDEX--------------------------------*/
