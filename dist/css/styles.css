@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* VARIABLES */
 /*GLOBAL*/
-@import url("//fonts.googleapis.com/icon?family=Material+Icons");
 * {
   margin: 0;
   padding: 0;
@@ -519,6 +518,29 @@ input {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+/*ACLARACIONES*/
+#aclaraciones-sellos {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 20px 20px 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+#aclaraciones-sellos .aclaraciones__ul {
+  list-style-position: inside;
 }
 
 /*FORM*/

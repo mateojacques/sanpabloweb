@@ -70,8 +70,10 @@
         <hr>
         <h3 class="questions__h3 desc">Puede acercarse a nuestro local,
             donde un empleado la guiará en el proceso, o puede realizar
-            su pedido a través de nuestro <a href="#form">formulario</a> en
-            esta misma página.</h3>
+            su pedido a través de nuestro <a href="#form">formulario web</a> en
+            esta misma página. Antes de utilizar la segunda opción, por favor
+            lea atentamente nuestras <a href="#aclaraciones-sellos">aclaraciones generales</a> para evitar
+            equivocaciones.</h3>
         <div class="spacer"></div>
         <h1 class="questions__h1 title">¿Cuándo retiro mi sello?</h1>
         <hr>
@@ -81,6 +83,36 @@
             de inmediato en cuanto a que día y hora retirar su
             producto.</h3>
     </section>
+
+    <hr style="border-color: grey; margin-bottom: 30px;">
+
+    <section id="aclaraciones-sellos">
+        <h1 class="aclaraciones__h1 title"> Aclaraciones generales para el pedido
+            de sellos a través de nuestro formulario web</h1>
+        <hr>
+        <ul class="aclaraciones__ul">
+            <li class="aclaraciones__li desc">Las vías de contacto ingresadas serán las utilizadas
+                para informar al cliente en caso de producirse una situación especial, por favor
+                revisar que sean ingresadas correctamente.</li>
+            <li class="aclaraciones__li desc">Los sellos automáticos se componen por distintas líneas, donde cada
+                una adicional a la primera tiene un costo agregado de $40. Los sellos de base de madera poseen un
+                precio fijo en cuanto al área de texto, más un agregado de $70 por incluir un logo o dibujo.</li>
+            <li class="aclaraciones__li desc">Las aclaraciones acerca del sello deben ser precisas
+                y entendibles, puesto que estas influirán directamente en el diseño del mismo. Ejemplo: "dibujo a
+                la derecha, texto a la izquierda".
+            </li>
+            <li class="aclaraciones__li desc">En caso de enviarnos tu propio dibujo, este debe ser
+                <b>lineal</b> y estar en blanco y negro. Para esto, podés efectuar una búsqueda en <b>Google
+                Imágenes</b> y seleccionar <b>'Herramientas' --> 'Tipo' -->'Dibujo lineal'</b>. En caso de haber
+                algún inconveniente con el dibujo enviado, nos vamos a comunicar con vos para solucionarlo.</li>
+                <li class="aclaraciones__li desc">Luego de enviar tu pedido se te va a redireccionar a la página
+                    de pago, donde podés utilizar tanto tarjetas de crédito o débito como efectivo mediante el
+                    sistema de <b>MercadoPago</b>. Por favor tené en cuenta que si no efectuas el pago, tu
+                    pedido será descartado.
+                </li>
+        </ul>
+    </section>
+
 
     <form id="form" netlify action="/dist/dir/realizar-pago.html">
 
@@ -142,7 +174,7 @@
                 <select name="select-lines" id="form__select-lines" class="form__select" onchange="lineSelect()"
                     required>
                     <option class="form__select__option" value="default" selected>Seleccione
-                    la cantidad de líneas.
+                        la cantidad de líneas.
                     </option>
                     <option class="form__select__option" value="1">1</option>
                     <option class="form__select__option" value="2">2</option>
@@ -162,28 +194,22 @@
                 </select>
 
                 <div class="form__drawing">
-                <h3>Utilizá nuestro</h3>
-                <button type="button" id="drawingsCatalog" class="form__catalog">Catálogo de dibujos</button>
-                <h3>ó incluí tu dibujo propio:</h3>
-                <input type="file" name="drawing-file" id="form__file" class="form__file">
+                    <h3>Utilizá nuestro</h3>
+                    <button type="button" id="drawingsCatalog" class="form__catalog">Catálogo de dibujos</button>
+                    <h3>ó incluí tu dibujo propio:</h3>
+                    <input type="file" name="drawing-file" id="form__file" class="form__file">
                 </div>
             </div>
 
             <div class="form__div__lines">
                 <input type="text" id="form__line1" class="form__line" name="line1" required
                     placeholder="Linea 1 (requerido)">
-                <input type="text" id="form__line2" class="form__line" name="line2"
-                    placeholder="Linea 2 (requerido)">
-                <input type="text" id="form__line3" class="form__line" name="line3"
-                    placeholder="Linea 3 (requerido)">
-                <input type="text" id="form__line4" class="form__line" name="line4"
-                    placeholder="Linea 4 (requerido)">
-                <input type="text" id="form__line5" class="form__line" name="line5"
-                    placeholder="Linea 5 (requerido)">
-                <input type="text" id="form__line6" class="form__line" name="line6"
-                    placeholder="Linea 6 (requerido)">
-                <input type="number" id="form__lineD" class="form__line" name="drawing"
-                    placeholder="N° de dibujo">
+                <input type="text" id="form__line2" class="form__line" name="line2" placeholder="Linea 2 (requerido)">
+                <input type="text" id="form__line3" class="form__line" name="line3" placeholder="Linea 3 (requerido)">
+                <input type="text" id="form__line4" class="form__line" name="line4" placeholder="Linea 4 (requerido)">
+                <input type="text" id="form__line5" class="form__line" name="line5" placeholder="Linea 5 (requerido)">
+                <input type="text" id="form__line6" class="form__line" name="line6" placeholder="Linea 6 (requerido)">
+                <input type="number" id="form__lineD" class="form__line" name="drawing" placeholder="N° de dibujo">
             </div>
 
             <div class="form__div__comments">
@@ -193,12 +219,14 @@
 
             <div class="form__div__price">
                 <h1 class="form__price__title">Precio: $</h1>
-                <input type="text" name="price" id="form__price" class="form__price" onchange="submitData()" onkeydown="return false;"/>
+                <input type="text" name="price" id="form__price" class="form__price" onchange="submitData()"
+                    onkeydown="return false;" />
             </div>
 
             <div class="form__div__submit">
 
-                <input type="submit" value="Enviar" netlify id="form__submit" onclick="submitData()" class="form__submit"/>
+                <input type="submit" value="Enviar" netlify id="form__submit" onclick="submitData()"
+                    class="form__submit" />
 
             </div>
         </div>
