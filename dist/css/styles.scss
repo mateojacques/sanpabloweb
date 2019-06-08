@@ -567,6 +567,25 @@ input {
     border-color: $secondaryColor;
   }
 
+  .form__select__container{
+    width: 99%; 
+    height: auto;
+    display: grid;
+    grid-template-columns: 90% 10%;
+
+    .form__help{
+      width: 40px;
+      height: auto;
+      background: white;
+      border-radius: 20px;
+      z-index: 2;
+    }
+
+    .form__help:hover{
+      cursor: pointer;
+    }
+  }
+
   .form__drawing {
     display: none;
     width: 70%;
@@ -652,6 +671,40 @@ input {
   input[type="submit"]:active {
     background: $secondaryColorDarker;
   }
+}
+
+.form__help__popup{
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+
+  .form__help__img{
+    width: 400px;
+    height: auto;
+  }
+}
+
+.form__help__exit{
+  opacity: 0;
+  font-size: 24px;
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.form__help__exit:hover{
+  cursor: pointer;
 }
 
 #payment__button {

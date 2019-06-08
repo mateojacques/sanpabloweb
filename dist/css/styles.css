@@ -671,6 +671,27 @@ input {
   border-color: #132a5c;
 }
 
+#form .form__div__select .form__select__container {
+  width: 99%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+}
+
+#form .form__div__select .form__select__container .form__help {
+  width: 40px;
+  height: auto;
+  background: white;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+#form .form__div__select .form__select__container .form__help:hover {
+  cursor: pointer;
+}
+
 #form .form__div__select .form__drawing {
   display: none;
   width: 70%;
@@ -774,6 +795,51 @@ input {
 
 #form input[type="submit"]:active {
   background: #0e1f43;
+}
+
+.form__help__popup {
+  margin-top: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.form__help__popup .form__help__img {
+  width: 400px;
+  height: auto;
+}
+
+.form__help__exit {
+  opacity: 0;
+  font-size: 24px;
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.form__help__exit:hover {
+  cursor: pointer;
 }
 
 #payment__button {

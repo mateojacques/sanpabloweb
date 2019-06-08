@@ -653,5 +653,22 @@ function drawSelect() {
 function submitData() {
     const price = document.getElementById('form__price');
     localStorage.setItem('price', price.value);
-    console.log(localStorage);
+}
+
+function help(){
+    const popup = document.querySelector('.form__help__popup');
+    const cross = document.querySelector('.form__help__exit');
+
+    popup.style.display = 'flex';
+    popup.style.opacity = 1;
+    cross.style.opacity = 1;
+}
+
+function helpOut(){
+    const popup = document.querySelector('.form__help__popup');
+    const cross = document.querySelector('.form__help__exit');
+
+    popup.style.display = 'none';
+    popup.style.opacity = 0;
+    cross.style.opacity = 0;
 }

@@ -103,13 +103,13 @@
             </li>
             <li class="aclaraciones__li desc">En caso de enviarnos tu propio dibujo, este debe ser
                 <b>lineal</b> y estar en blanco y negro. Para esto, podés efectuar una búsqueda en <b>Google
-                Imágenes</b> y seleccionar <b>'Herramientas' --> 'Tipo' -->'Dibujo lineal'</b>. En caso de haber
+                    Imágenes</b> y seleccionar <b>'Herramientas' → 'Tipo' → 'Dibujo lineal'</b>. En caso de haber
                 algún inconveniente con el dibujo enviado, nos vamos a comunicar con vos para solucionarlo.</li>
-                <li class="aclaraciones__li desc">Luego de enviar tu pedido se te va a redireccionar a la página
-                    de pago, donde podés utilizar tanto tarjetas de crédito o débito como efectivo mediante el
-                    sistema de <b>MercadoPago</b>. Por favor tené en cuenta que si no efectuas el pago, tu
-                    pedido será descartado.
-                </li>
+            <li class="aclaraciones__li desc">Luego de enviar tu pedido se te va a redireccionar a la página
+                de pago, donde podés utilizar tanto tarjetas de crédito o débito como efectivo mediante el
+                sistema de <b>MercadoPago</b>. Por favor tené en cuenta que si no efectuas el pago, tu
+                pedido será descartado.
+            </li>
         </ul>
     </section>
 
@@ -133,41 +133,54 @@
 
                 <h3>Elegí tu modelo:</h3>
 
-                <select name="select-model" id="form__select-model" class="form__select" onload="modelSelect()"
-                    onchange="modelSelect()" required>
-                    <option class="form__select__option" value="default" selected>Seleccione un modelo</option>
-                    <option class="form__select__option" value="12x30g">12x30 GOMA SOLA</option>
-                    <option class="form__select__option" value="15x40g">15x40 GOMA SOLA</option>
-                    <option class="form__select__option" value="18x46g">18x46 GOMA SOLA</option>
-                    <option class="form__select__option" value="24x61g">24x61 GOMA SOLA</option>
-                    <option class="form__select__option" value="12x30">12x30 C/AUTOMATICO</option>
-                    <option class="form__select__option" value="15x40a">15x40 C/AUTOMATICO</option>
-                    <option class="form__select__option" value="18x46">18x46 C/AUTOMATICO</option>
-                    <option class="form__select__option" value="24x61">24x61 C/AUTOMATICO</option>
-                    <option class="form__select__option" value="29x61">29x61 C/AUTOMATICO</option>
-                    <option class="form__select__option" value="40x60">40x60 C/AUTOMATICO</option>
-                    <option class="form__select__option" value="10x50">BASE 10x50 RECTANGULAR</option>
-                    <option class="form__select__option" value="10x40">BASE 10x40 RECTANGULAR</option>
-                    <option class="form__select__option" value="15x40b">BASE 15x40 RECTANGULAR</option>
-                    <option class="form__select__option" value="20x50">BASE 20x50 RECTANGULAR</option>
-                    <option class="form__select__option" value="20x60">BASE 20x60 RECTANGULAR</option>
-                    <option class="form__select__option" value="20x80">BASE 20x80 RECTANGULAR</option>
-                    <option class="form__select__option" value="25x70">BASE 25x70 RECTANGULAR</option>
-                    <option class="form__select__option" value="30x30">BASE 30x30 REDONDA</option>
-                    <option class="form__select__option" value="30x60">BASE 30x60 RECTANGULAR</option>
-                    <option class="form__select__option" value="40x40">BASE 40x40 CUADRADA</option>
-                    <option class="form__select__option" value="40x60">BASE 40x60 RECTANGULAR</option>
-                    <option class="form__select__option" value="40x35">BASE 40x35 OVALADA</option>
-                    <option class="form__select__option" value="55x55">BASE 55x55 REDONDA</option>
-                    <option class="form__select__option" value="60x40">BASE 60x40 OVALADA</option>
-                    <option class="form__select__option" value="90x40">BASE 90x40 RECTANGULAR</option>
-                    <option class="form__select__option" value="90x85">BASE 90x85</option>
-                    <option class="form__select__option" value="18x47">POCKET 18x47</option>
-                    <option class="form__select__option" value="d40x40">DECORATIVO 40x40</option>
-                    <option class="form__select__option" value="a2000">ALMOHADILLA 2000/2001</option>
-                    <option class="form__select__option" value="a2002">ALMOHADILLA 2002</option>
-                    <option class="form__select__option" value="a2003">ALMOHADILLA 2003</option>
-                </select>
+                <div class="form__select__container">
+                    <select name="select-model" id="form__select-model" class="form__select" onload="modelSelect()"
+                        onchange="modelSelect()" required>
+                        <option class="form__select__option" value="default" selected>Seleccione un modelo</option>
+                        <option class="form__select__option" value="12x30g">12x30 GOMA SOLA</option>
+                        <option class="form__select__option" value="15x40g">15x40 GOMA SOLA</option>
+                        <option class="form__select__option" value="18x46g">18x46 GOMA SOLA</option>
+                        <option class="form__select__option" value="24x61g">24x61 GOMA SOLA</option>
+                        <option class="form__select__option" value="12x30">12x30 C/AUTOMATICO</option>
+                        <option class="form__select__option" value="15x40a">15x40 C/AUTOMATICO</option>
+                        <option class="form__select__option" value="18x46">18x46 C/AUTOMATICO</option>
+                        <option class="form__select__option" value="24x61">24x61 C/AUTOMATICO</option>
+                        <option class="form__select__option" value="29x61">29x61 C/AUTOMATICO</option>
+                        <option class="form__select__option" value="40x60">40x60 C/AUTOMATICO</option>
+                        <option class="form__select__option" value="10x50">BASE 10x50 RECTANGULAR</option>
+                        <option class="form__select__option" value="10x40">BASE 10x40 RECTANGULAR</option>
+                        <option class="form__select__option" value="15x40b">BASE 15x40 RECTANGULAR</option>
+                        <option class="form__select__option" value="20x50">BASE 20x50 RECTANGULAR</option>
+                        <option class="form__select__option" value="20x60">BASE 20x60 RECTANGULAR</option>
+                        <option class="form__select__option" value="20x80">BASE 20x80 RECTANGULAR</option>
+                        <option class="form__select__option" value="25x70">BASE 25x70 RECTANGULAR</option>
+                        <option class="form__select__option" value="30x30">BASE 30x30 REDONDA</option>
+                        <option class="form__select__option" value="30x60">BASE 30x60 RECTANGULAR</option>
+                        <option class="form__select__option" value="40x40">BASE 40x40 CUADRADA</option>
+                        <option class="form__select__option" value="40x60">BASE 40x60 RECTANGULAR</option>
+                        <option class="form__select__option" value="40x35">BASE 40x35 OVALADA</option>
+                        <option class="form__select__option" value="55x55">BASE 55x55 REDONDA</option>
+                        <option class="form__select__option" value="60x40">BASE 60x40 OVALADA</option>
+                        <option class="form__select__option" value="90x40">BASE 90x40 RECTANGULAR</option>
+                        <option class="form__select__option" value="90x85">BASE 90x85</option>
+                        <option class="form__select__option" value="18x47">POCKET 18x47</option>
+                        <option class="form__select__option" value="d40x40">DECORATIVO 40x40</option>
+                        <option class="form__select__option" value="a2000">ALMOHADILLA 2000/2001</option>
+                        <option class="form__select__option" value="a2002">ALMOHADILLA 2002</option>
+                        <option class="form__select__option" value="a2003">ALMOHADILLA 2003</option>
+                    </select>
+
+                    <div style="width: auto; height: 100%; display: flex; align-items: center;">
+                        <img id="form__help" class="form__help" src="../res/help.png" alt="Ayuda" onclick="help()">
+                    </div>
+                </div>
+
+                <div class="form__help__popup">
+                    <img class="form__help__img" src="../res/san pablo web/v/SP88.jpg" alt="">
+                    <div class="form__help__exit" onclick="helpOut()">
+                        <p>X</p>
+                    </div>
+                </div>
 
                 <h3>¿Cuantas líneas tiene tu sello?</h3>
 
