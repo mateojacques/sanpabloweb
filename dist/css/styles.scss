@@ -580,10 +580,6 @@ input {
       border-radius: 20px;
       z-index: 2;
     }
-
-    .form__help:hover{
-      cursor: pointer;
-    }
   }
 
   .form__drawing {
@@ -671,40 +667,6 @@ input {
   input[type="submit"]:active {
     background: $secondaryColorDarker;
   }
-}
-
-.form__help__popup{
-  margin: 30px auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  width: 100%;
-  height: auto;
-  display: none;
-  justify-content: center;
-  align-items: flex-start;
-
-  .form__help__img{
-    width: 400px;
-    height: auto;
-  }
-}
-
-.form__help__exit{
-  opacity: 0;
-  font-size: 24px;
-  background: white;
-  color: black;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.form__help__exit:hover{
-  cursor: pointer;
 }
 
 #payment__button {
@@ -1183,7 +1145,7 @@ input {
 
   .form__help__popup{
     margin: 10px auto;
-    transform: scale(0.7);
+    padding: 10px;
   }
 
   /*---------------------------SERVICES--------------------------------*/
