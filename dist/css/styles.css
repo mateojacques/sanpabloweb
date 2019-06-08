@@ -798,12 +798,12 @@ input {
 }
 
 .form__help__popup {
-  margin-top: 20px;
+  margin: 20px auto;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

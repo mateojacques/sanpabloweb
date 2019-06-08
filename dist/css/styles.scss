@@ -674,11 +674,11 @@ input {
 }
 
 .form__help__popup{
-  margin-top: 20px;
+  margin: 20px auto;
   opacity: 0;
   transition: opacity 0.3s ease;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: none;
   justify-content: center;
   align-items: flex-start;
