@@ -374,6 +374,27 @@ function lineSelect() {
         switch (linesValue) {
             case '1':
             case 'default':
+                    if (isAutomatic === true && parseInt(price.value) > 0) {
+                        switch (previousValue) {
+                            case '2':
+                                price.value = parseInt(price.value) - 40;
+                                break;
+                            case '3':
+                                price.value = parseInt(price.value) - 80;
+                                break;
+                            case '4':
+                                price.value = parseInt(price.value) - 120;
+                                break;
+                            case '5':
+                                price.value = parseInt(price.value) - 160;
+                                break;
+                            case '6':
+                                price.value = parseInt(price.value) - 200;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
                 previousValue = linesValue;
                 try {
                     line2.style.display = 'none';
