@@ -1144,7 +1144,9 @@ input {
   }
 
   .form__drawing{
+    width: 90%;
     padding: 20px;
+    overflow-x: hidden;
   }
 
   /*---------------------------SERVICES--------------------------------*/
