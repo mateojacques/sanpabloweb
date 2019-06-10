@@ -374,27 +374,27 @@ function lineSelect() {
         switch (linesValue) {
             case '1':
             case 'default':
-                    if (isAutomatic === true && parseInt(price.value) > 0) {
-                        switch (previousValue) {
-                            case '2':
-                                price.value = parseInt(price.value) - 40;
-                                break;
-                            case '3':
-                                price.value = parseInt(price.value) - 80;
-                                break;
-                            case '4':
-                                price.value = parseInt(price.value) - 120;
-                                break;
-                            case '5':
-                                price.value = parseInt(price.value) - 160;
-                                break;
-                            case '6':
-                                price.value = parseInt(price.value) - 200;
-                                break;
-                            default:
-                                break;
-                        }
+                if (isAutomatic === true && parseInt(price.value) > 0) {
+                    switch (previousValue) {
+                        case '2':
+                            price.value = parseInt(price.value) - 40;
+                            break;
+                        case '3':
+                            price.value = parseInt(price.value) - 80;
+                            break;
+                        case '4':
+                            price.value = parseInt(price.value) - 120;
+                            break;
+                        case '5':
+                            price.value = parseInt(price.value) - 160;
+                            break;
+                        case '6':
+                            price.value = parseInt(price.value) - 200;
+                            break;
+                        default:
+                            break;
                     }
+                }
                 previousValue = linesValue;
                 try {
                     line2.style.display = 'none';
@@ -411,6 +411,11 @@ function lineSelect() {
                 } catch { }
                 break;
             case '2':
+                if (modelValue == 'default') {
+                    selectLines.selectedIndex = '0';
+                    window.alert('Elija un modelo para continuar.');
+                    return false;
+                }
                 if (isAutomatic === true && parseInt(price.value) > 0) {
                     switch (previousValue) {
                         case '1':
@@ -455,6 +460,11 @@ function lineSelect() {
                 } catch { }
                 break;
             case '3':
+                if (modelValue == 'default') {
+                    selectLines.selectedIndex = '0';
+                    window.alert('Elija un modelo para continuar.');
+                    return false;
+                }
                 if (isAutomatic === true && parseInt(price.value) > 0) {
                     switch (previousValue) {
                         case '1':
@@ -499,6 +509,11 @@ function lineSelect() {
                 } catch { }
                 break;
             case '4':
+                if (modelValue == 'default') {
+                    selectLines.selectedIndex = '0';
+                    window.alert('Elija un modelo para continuar.');
+                    return false;
+                }
                 if (isAutomatic === true && parseInt(price.value) > 0) {
                     switch (previousValue) {
                         case '1':
@@ -541,6 +556,11 @@ function lineSelect() {
                 } catch { }
                 break;
             case '5':
+                if (modelValue == 'default') {
+                    selectLines.selectedIndex = '0';
+                    window.alert('Elija un modelo para continuar.');
+                    return false;
+                }
                 if (isAutomatic === true && parseInt(price.value) > 0) {
                     switch (previousValue) {
                         case '1':
@@ -582,6 +602,11 @@ function lineSelect() {
                 } catch { }
                 break;
             case '6':
+                if (modelValue == 'default') {
+                    selectLines.selectedIndex = '0';
+                    window.alert('Elija un modelo para continuar.');
+                    return false;
+                }
                 if (isAutomatic === true && parseInt(price.value) > 0) {
                     switch (previousValue) {
                         case '1':
@@ -617,11 +642,6 @@ function lineSelect() {
                 line5.setAttribute('required', '');
                 line6.setAttribute('required', '');
                 previousValue = linesValue;
-                break;
-            case 'reset':
-                price.value = '';
-                selectModel.selectedIndex = '0';
-                selectLines.selectedIndex = '0';
                 break;
         }
     } catch{ }
