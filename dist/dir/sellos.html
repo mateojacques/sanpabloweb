@@ -169,9 +169,6 @@
                         <option class="form__select__option" value="90x85">BASE 90x85</option>
                         <option class="form__select__option" value="18x47">POCKET 18x47</option>
                         <option class="form__select__option" value="d40x40">DECORATIVO 40x40</option>
-                        <option class="form__select__option" value="a2000">ALMOHADILLA 2000/2001</option>
-                        <option class="form__select__option" value="a2002">ALMOHADILLA 2002</option>
-                        <option class="form__select__option" value="a2003">ALMOHADILLA 2003</option>
                     </select>
 
                     <div style="width: auto; height: 100%; display: flex; align-items: center;">
@@ -179,7 +176,15 @@
                     </div>
                 </div>
 
-                <h3>¿Cuantas líneas tiene tu sello?</h3>
+                <div id="form__orientation">
+                    <h3>¿Qué orientación tiene tu sello?</h3>
+                    <select name="select-orientation" id="form__select-orientation" class="form__select" required>
+                        <option value="horizontal" selected>Horizontal</option>
+                        <option value="vertical">Vertical</option>
+                    </select>
+                </div>
+
+                <h3 id="form__lines__title">¿Cuantas líneas tiene tu sello?</h3>
 
                 <select name="select-lines" id="form__select-lines" class="form__select" onchange="lineSelect()"
                     required>
@@ -194,7 +199,7 @@
                     <option class="form__select__option" value="6">6</option>
                 </select>
 
-                <h3>¿Tu sello tiene un logo o dibujo?</h3>
+                <h3 id="form__draw__title">¿Tu sello tiene un logo o dibujo?</h3>
 
                 <select name="select-drawing" id="form__select-drawing" class="form__select" onchange="drawSelect()"
                     required>

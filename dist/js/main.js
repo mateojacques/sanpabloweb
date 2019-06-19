@@ -129,15 +129,21 @@ function modelSelect() {
     const price = document.getElementById('form__price');
     const selectModel = document.getElementById('form__select-model');
     let modelValue = selectModel.options[selectModel.selectedIndex].value;
+    const selectLines = document.getElementById('form__select-lines');
+    const orientation = document.getElementById('form__orientation');
+
     switch (modelValue) {
         case 'default':
             price.value = 0;
+            orientation.style.display = 'none';
             break;
         case '12x30g':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
+            orientation.style.display = 'none';
             price.value = 100;
             break;
         case '15x40g':
@@ -145,13 +151,18 @@ function modelSelect() {
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
+            orientation.style.display = 'none';
             price.value = 100;
+            orientation.style.display = 'initial';
             break;
         case '18x46g':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
+            orientation.style.display = 'none';
             price.value = 100;
             break;
         case '24x61g':
@@ -159,118 +170,152 @@ function modelSelect() {
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 100;
+            orientation.style.display = 'none';
             break;
         case '12x30':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 230;
+            orientation.style.display = 'none';
             break;
         case '15x40a':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 230;
+            orientation.style.display = 'initial';
             break;
         case '18x46':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 260;
+            orientation.style.display = 'none';
             break;
         case '24x61':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 365;
+            orientation.style.display = 'none';
             break;
         case '29x61':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 390;
+            orientation.style.display = 'none';
             break;
         case '40x60':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 500;
+            orientation.style.display = 'none';
             break;
         case '10x50':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 180;
+            orientation.style.display = 'none';
             break;
         case '10x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 120;
+            orientation.style.display = 'none';
             break;
         case '15x40b':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 180;
+            orientation.style.display = 'none';
             break;
         case '20x50':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 200;
+            orientation.style.display = 'none';
             break;
         case '10x60':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 220;
+            orientation.style.display = 'none';
             break;
         case '20x80':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 280;
+            orientation.style.display = 'none';
             break;
         case '25x70':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 280;
+            orientation.style.display = 'none';
             break;
         case '30x30':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 250;
+            orientation.style.display = 'none';
             break;
         case '30x60':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 280;
+            orientation.style.display = 'none';
             break;
         case '40x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
+            orientation.style.display = 'none';
             price.value = 280;
             break;
         case '40x60':
@@ -278,49 +323,63 @@ function modelSelect() {
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 350;
+            orientation.style.display = 'none';
             break;
         case '40x35':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 280;
+            orientation.style.display = 'none';
             break;
         case '55x55':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 420;
+            orientation.style.display = 'none';
             break;
         case '60x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 350;
+            orientation.style.display = 'none';
             break;
         case '90x40':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 450;
+            orientation.style.display = 'none';
             break;
         case '90x85':
             isBase = true;
             isAutomatic = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 700;
+            orientation.style.display = 'none';
             break;
         case '18x47':
             isAutomatic = true;
             isBase = false;
             isDecorative = false;
             isAlmoahilla = false;
+            selectLines.selectedIndex = '0';
             price.value = 300;
+            orientation.style.display = 'initial';
             break;
         case 'd40x40':
             isDecorative = true;
@@ -328,27 +387,7 @@ function modelSelect() {
             isBase = false;
             isAlmoahilla = false;
             price.value = 240;
-            break;
-        case 'a2000':
-            isDecorative = false;
-            isAutomatic = false;
-            isBase = false;
-            isAlmoahilla = true;
-            price.value = 80;
-            break;
-        case 'a2002':
-            isDecorative = false;
-            isAutomatic = false;
-            isBase = false;
-            isAlmoahilla = true;
-            price.value = 90;
-            break;
-        case 'a2003':
-            isDecorative = false;
-            isAutomatic = false;
-            isBase = false;
-            isAlmoahilla = true;
-            price.value = 105;
+            orientation.style.display = 'none';
             break;
     }
 }
@@ -366,7 +405,6 @@ function lineSelect() {
         const line4 = document.getElementById('form__line4');
         const line5 = document.getElementById('form__line5');
         const line6 = document.getElementById('form__line6');
-        const lineD = document.getElementById('form__lineD');
 
         const selectLines = document.getElementById('form__select-lines');
         let linesValue = selectLines.options[selectLines.selectedIndex].value;

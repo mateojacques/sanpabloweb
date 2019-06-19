@@ -671,6 +671,13 @@ input {
   border-color: #132a5c;
 }
 
+#form .form__div__select #form__orientation {
+  display: none;
+  background: #132a5c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 #form .form__div__select .form__select__container {
   width: 99%;
   height: auto;
