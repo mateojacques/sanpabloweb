@@ -944,6 +944,12 @@ input {
 
 #services__sidebar .sidebar .sidebar__img {
   margin-top: 20px;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 10px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*---------------------------CONTACT--------------------------------*/
