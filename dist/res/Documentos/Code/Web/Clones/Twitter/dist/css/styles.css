@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.active {
+  border-bottom: 2px solid #1DA1F2;
+}
+
+.text-active {
+  color: #1DA1F2;
+}
+
+#nav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-bottom: 1.3px solid #AAB8C2;
+  padding: 0px 50px;
+}
+
+#nav .nav__links {
+  width: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#nav .nav__links ul {
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+#nav .nav__links ul li {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav .nav__links ul li img {
+  width: 35px;
+  height: 35px;
+}
+
+#nav .nav__links ul li a {
+  text-decoration: none;
+  color: #657786;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+#nav .nav__logo .nav__logo__img {
+  width: 32px;
+  height: auto;
+}
+
+#nav .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav .nav__right .nav__search {
+  margin: 0 auto;
+}
+
+#nav .nav__right .nav__search input[type="search"] {
+  border-style: none;
+  border-radius: 20px;
+  height: 23px;
+  width: 175px;
+  border: 1px solid #E1E8ED;
+  background: #F5F8FA;
+  text-indent: 10px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+#nav .nav__right .nav__profile {
+  margin: 0 auto;
+}
+
+#nav .nav__right .nav__profile a img {
+  border-radius: 16px;
+}
+
+#nav .nav__right .nav__button {
+  margin: 0 auto;
+}
+
+#nav .nav__right .nav__button button {
+  border-style: none;
+  background: #1DA1F2;
+  padding: 9px 18px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*
+
+#nav__links__1::before{
+    background-image: url('../res/home.png');
+    background-size: 32px 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px; 
+    height: 32px;
+    content:"";
+}
+
+#nav__links__2::before{
+    background-image: url('../res/moments.png');
+    background-size: 40px 40px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px; 
+    height: 40px;
+    content:"";
+}
+
+#nav__links__3::before{
+    background-image: url('../res/notifications.png');
+    background-size: 32px 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px; 
+    height: 32px;
+    content:"";
+}
+
+#nav__links__4::before{
+    background-image: url('../res/messages.png');
+    background-size: 32px 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px; 
+    height: 32px;
+    content:"";
+}*/
+/*# sourceMappingURL=styles.css.map */
