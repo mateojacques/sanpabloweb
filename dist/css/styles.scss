@@ -1156,6 +1156,15 @@ input {
     overflow-x: hidden;
   }
 
+#payment{
+  .payment__logo{
+    transform: scale(0.7);
+  }
+
+  .payment__card{
+    width: 90%;
+  }
+}
   /*---------------------------SERVICES--------------------------------*/
 
   .servicesContainer {

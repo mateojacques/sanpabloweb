@@ -1376,6 +1376,13 @@ input {
     padding: 20px !important;
     overflow-x: hidden;
   }
+  #payment .payment__logo {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  #payment .payment__card {
+    width: 90%;
+  }
   /*---------------------------SERVICES--------------------------------*/
   .servicesContainer {
     height: auto;
