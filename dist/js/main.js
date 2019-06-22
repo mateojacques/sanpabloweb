@@ -5,7 +5,7 @@ const buttons = document.getElementsByClassName("header__buttons");
 const headerImg = document.getElementsByClassName("header__img");
 
 const mobile = window.matchMedia("(max-width: 468px)");
-const tablet = window.matchMedia("(max-width: 768px)");
+const tablet = window.matchMedia("(max-width: 850px)");
 const notebook = window.matchMedia("(max-width: 1899px)");
 const desktop = window.matchMedia("(min-width: 1600px)");
 
@@ -31,7 +31,7 @@ window.onload = function () {
         }
 
         else if (desktop.matches || notebook.matches) {
-            headerImg[0].src = "https://tb2cdn.schoolwebmasters.com/accnt_171650/site_171651/Graphics/graphic_header_AboutUs.jpg";
+            headerImg[0].src = "https://i.imgur.com/zEvi0p4.jpg";
         }
     } catch {
         console.log('No header__img in this page.');
@@ -61,7 +61,7 @@ window.onresize = function () {
         }
 
         else if (desktop.matches || notebook.matches) {
-            headerImg[0].src = "https://tb2cdn.schoolwebmasters.com/accnt_171650/site_171651/Graphics/graphic_header_AboutUs.jpg";
+            headerImg[0].src = "https://i.imgur.com/zEvi0p4.jpg";
         }
     } catch {
         console.log('No header__img in this page.');

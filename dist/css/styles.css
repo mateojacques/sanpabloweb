@@ -1122,7 +1122,7 @@ input {
   background: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   /* NAV (M) */
   #nav {
     position: -webkit-sticky;
@@ -1412,7 +1412,7 @@ input {
   }
 }
 
-@media screen and (max-width: 768px) and (max-width: 468px) {
+@media screen and (max-width: 950px) and (max-width: 468px) {
   /*MAIN SECTION CONTAINER (M)*/
   .main-section__container {
     border: none;
@@ -1549,7 +1549,7 @@ input {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   /*Media Query (MW: 450PX)*/
 }
 
