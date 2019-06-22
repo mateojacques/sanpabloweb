@@ -53,11 +53,11 @@ window.onresize = function () {
 
     try {
         if (mobile.matches) {
-            headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
+            headerImg[0].src = "https://i.imgur.com/oZevzX2.jpg";
         }
 
         else if (tablet.matches) {
-            headerImg[0].src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62066741%2F287897607331%2F1%2Foriginal.20190510-154016?w=1000&auto=compress&rect=0%2C226%2C900%2C450&s=48a8763469aa24c6e0bf6dc493e92a0d";
+            headerImg[0].src = "https://i.imgur.com/3t2A8Aj.jpg";
         }
 
         else if (desktop.matches || notebook.matches) {
@@ -67,6 +67,14 @@ window.onresize = function () {
         console.log('No header__img in this page.');
     }
 }
+
+/*
+FOTOS LIBRERIA
+
+header desktop = https://i.imgur.com/zEvi0p4.jpg;
+header tablet = https://i.imgur.com/3t2A8Aj.jpg;
+header phone = https://i.imgur.com/oZevzX2.jpg;
+*/
 
 function openNav() {
     document.getElementById("nav--side").style.width = "250px";
