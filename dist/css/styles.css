@@ -1,5 +1,17 @@
 @charset "UTF-8";
 /* VARIABLES */
+/*FONTS*/
+@font-face {
+  font-family: "Birds";
+  src: url("fonts/Birds of Paradise.ttf");
+  src: url("fonts/birds_of_paradise__personal_use_only-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Script";
+  src: url("fonts/SCRIPTBL.TTF");
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -434,7 +446,8 @@ input {
 }
 
 /*FOOTER (D)*/
-#footer, #footerServices {
+#footer,
+#footerServices {
   width: 100%;
   height: auto;
   text-align: center;
@@ -443,25 +456,29 @@ input {
   margin-top: auto;
 }
 
-#footer .footer__h1, #footerServices .footer__h1 {
+#footer .footer__h1,
+#footerServices .footer__h1 {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 200;
 }
 
-#footer .footer__h2, #footerServices .footer__h2 {
+#footer .footer__h2,
+#footerServices .footer__h2 {
   color: #fff;
   font-size: 0.8rem;
   font-weight: 200;
 }
 
-#footer .footer__h3, #footerServices .footer__h3 {
+#footer .footer__h3,
+#footerServices .footer__h3 {
   margin-bottom: 10px;
   color: #fff;
   font-weight: 200;
 }
 
-#footer .footer__h4, #footerServices .footer__h4 {
+#footer .footer__h4,
+#footerServices .footer__h4 {
   margin: 10px 0px 30px 0px;
   color: #fff;
   font-weight: 200;
@@ -624,9 +641,48 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#form .form__div__lines #form__line2, #form .form__div__lines #form__line3, #form .form__div__lines #form__line4, #form .form__div__lines #form__line5, #form .form__div__lines #form__line6, #form .form__div__lines #form__lineD {
+#form .form__div__lines .form__div__line {
+  width: 88%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-gap: 5px;
+}
+
+#form .form__div__lines .form__div__line input {
+  width: 100%;
+  margin-right: auto;
+}
+
+#form .form__div__lines .form__div__line select {
+  max-height: 35px;
+}
+
+#form .form__div__lines .form__div__line select option {
+  font-size: 23px;
+}
+
+#form .form__div__lines #form__div__line2,
+#form .form__div__lines #form__div__line3,
+#form .form__div__lines #form__div__line4,
+#form .form__div__lines #form__div__line5,
+#form .form__div__lines #form__div__line6,
+#form .form__div__lines #form__div__lineD {
+  display: none;
+}
+
+#form .form__div__lines #form__line2,
+#form .form__div__lines #form__line3,
+#form .form__div__lines #form__line4,
+#form .form__div__lines #form__line5,
+#form .form__div__lines #form__line6,
+#form .form__div__lines #form__lineD {
   display: none;
 }
 
@@ -749,7 +805,8 @@ input {
           align-items: baseline;
 }
 
-#form .form__div__price .form__price__title, #form .form__div__price .form__price {
+#form .form__div__price .form__price__title,
+#form .form__div__price .form__price {
   color: #fff;
   font-weight: 200;
   font-size: 1.5rem;

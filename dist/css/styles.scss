@@ -13,6 +13,17 @@ $primaryFont: "Ubuntu";
 
 $libreriaUrl: "http://libreriasanpablo.com.ar/wp-content/uploads/2018/02/SP00-760x510.jpg";
 
+/*FONTS*/
+@font-face {
+  font-family: "Birds";
+  src: url("fonts/Birds\ of\ Paradise.ttf");
+  src: url("fonts/birds_of_paradise__personal_use_only-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Script";
+  src: url("fonts/SCRIPTBL.TTF");
+}
 /*GLOBAL*/
 
 * {
@@ -370,7 +381,8 @@ input {
 }
 
 /*FOOTER (D)*/
-#footer, #footerServices {
+#footer,
+#footerServices {
   width: 100%;
   height: auto;
   text-align: center;
@@ -447,7 +459,7 @@ input {
 }
 
 /*ACLARACIONES*/
-#aclaraciones-sellos{
+#aclaraciones-sellos {
   width: 100%;
   height: auto;
   background: #fff;
@@ -464,7 +476,7 @@ input {
   align-items: center;
   text-align: center;
 
-  .aclaraciones__ul{
+  .aclaraciones__ul {
     list-style-position: inside;
   }
 }
@@ -529,8 +541,43 @@ input {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    #form__line2, #form__line3, #form__line4, #form__line5, #form__line6, #form__lineD {
+    .form__div__line {
+      width: 88%;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-gap: 5px;
+
+      input {
+        width: 100%;
+        margin-right: auto;
+      }
+
+      select {
+        max-height: 35px;
+
+        option {
+          font-size: 23px;
+        }
+      }
+    }
+
+    #form__div__line2,
+    #form__div__line3,
+    #form__div__line4,
+    #form__div__line5,
+    #form__div__line6,
+    #form__div__lineD {
+      display: none;
+    }
+
+    #form__line2,
+    #form__line3,
+    #form__line4,
+    #form__line5,
+    #form__line6,
+    #form__lineD {
       display: none;
     }
 
@@ -539,9 +586,8 @@ input {
       margin: 0px auto 20px auto;
     }
   }
-  
-  .form__div__select{
 
+  .form__div__select {
     width: 100%;
     height: auto;
     margin-top: 10px;
@@ -551,64 +597,64 @@ input {
     align-items: center;
     justify-content: center;
 
-    h3{
+    h3 {
       color: $lightTextColor;
       font-weight: 200;
       margin-top: 20px;
     }
 
     .form__select {
-    width: 88%;
-    margin: 15px auto;
-    height: 35px;
-    font-size: 1rem;
-    padding-left: 5px;
-    border-radius: 5px;
-    border-color: $secondaryColor;
-  }
+      width: 88%;
+      margin: 15px auto;
+      height: 35px;
+      font-size: 1rem;
+      padding-left: 5px;
+      border-radius: 5px;
+      border-color: $secondaryColor;
+    }
 
-  #form__orientation{
-    display: none;
-    background: $secondaryColor;
-    padding: 20px;
-    border-radius: 10px;
-  }
+    #form__orientation {
+      display: none;
+      background: $secondaryColor;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-  .form__select__container{
-    width: 99%; 
-    height: auto;
-    display: grid;
-    grid-template-columns: 90% 10%;
-
-    .form__help{
-      width: 40px;
+    .form__select__container {
+      width: 99%;
       height: auto;
-      background: white;
-      border-radius: 20px;
-      z-index: 2;
+      display: grid;
+      grid-template-columns: 90% 10%;
+
+      .form__help {
+        width: 40px;
+        height: auto;
+        background: white;
+        border-radius: 20px;
+        z-index: 2;
+      }
+    }
+
+    .form__drawing {
+      display: none;
+      width: 70%;
+      background: $secondaryColor;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    #drawingsCatalog {
+      margin-top: 20px;
+      padding: 5px 10px;
+      font-size: 1.2rem;
+    }
+
+    #form__file {
+      margin-top: 20px;
+      color: white;
     }
   }
-
-  .form__drawing {
-    display: none;
-    width: 70%;
-    background: $secondaryColor;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    margin: 20px auto;
-  }
-
-  #drawingsCatalog {
-    margin-top: 20px;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-  }
-
-  #form__file{
-    margin-top: 20px;
-   color: white;
-  }
-}
 
   .form__div__comments {
     width: 100%;
@@ -633,18 +679,19 @@ input {
     justify-content: flex-start;
     align-items: baseline;
 
-    .form__price__title, .form__price {
+    .form__price__title,
+    .form__price {
       color: $lightTextColor;
       font-weight: 200;
       font-size: 1.5rem;
     }
 
-    #form__price{
+    #form__price {
       background: none;
       border: none;
       width: 75px;
+    }
   }
-}
 
   .form__div__submit {
     width: 100%;
@@ -1155,21 +1202,21 @@ input {
     }
   }
 
-  .form__drawing{
+  .form__drawing {
     width: 90%;
     padding: 20px !important;
     overflow-x: hidden;
   }
 
-#payment{
-  .payment__logo{
-    transform: scale(0.7);
-  }
+  #payment {
+    .payment__logo {
+      transform: scale(0.7);
+    }
 
-  .payment__card{
-    width: 90%;
+    .payment__card {
+      width: 90%;
+    }
   }
-}
   /*---------------------------SERVICES--------------------------------*/
 
   .servicesContainer {
@@ -1298,10 +1345,10 @@ input {
 
     /*---------------------------SERVICES--------------------------------*/
 
-  #services__sidebar {
-    width: 90%;
-    margin: -10px auto 20px auto;
-  }
+    #services__sidebar {
+      width: 90%;
+      margin: -10px auto 20px auto;
+    }
 
     /*---------------------------CONTACT (M)--------------------------------*/
     #contact {

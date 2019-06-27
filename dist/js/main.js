@@ -23,11 +23,11 @@ window.onload = function () {
 
     try {
         if (mobile.matches) {
-            headerImg[0].src = "https://www.officemax.co.nz/Images/ProductImages/2182149.jpg";
+            headerImg[0].src = "https://i.imgur.com/oZevzX2.jpg";
         }
 
         else if (tablet.matches) {
-            headerImg[0].src = "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F62066741%2F287897607331%2F1%2Foriginal.20190510-154016?w=1000&auto=compress&rect=0%2C226%2C900%2C450&s=48a8763469aa24c6e0bf6dc493e92a0d";
+            headerImg[0].src = "https://i.imgur.com/3t2A8Aj.jpg";
         }
 
         else if (desktop.matches || notebook.matches) {
@@ -413,6 +413,12 @@ function lineSelect() {
         const line4 = document.getElementById('form__line4');
         const line5 = document.getElementById('form__line5');
         const line6 = document.getElementById('form__line6');
+        
+        const line2d = document.getElementById('form__div__line2');
+        const line3d = document.getElementById('form__div__line3');
+        const line4d = document.getElementById('form__div__line4');
+        const line5d = document.getElementById('form__div__line5');
+        const line6d = document.getElementById('form__div__line6');
 
         const selectLines = document.getElementById('form__select-lines');
         let linesValue = selectLines.options[selectLines.selectedIndex].value;
@@ -448,6 +454,12 @@ function lineSelect() {
                     line4.style.display = 'none';
                     line5.style.display = 'none';
                     line6.style.display = 'none';
+
+                    line2d.style.display = 'none';
+                    line3d.style.display = 'none';
+                    line4d.style.display = 'none';
+                    line5d.style.display = 'none';
+                    line6d.style.display = 'none';
 
                     line2.removeAttribute('required', '');
                     line3.removeAttribute('required', '');
@@ -487,6 +499,8 @@ function lineSelect() {
                 }
                 line2.style.display = 'block';
 
+                line2d.style.display = 'grid';
+
                 line2.setAttribute('required', '');
                 line3.setAttribute('required', '');
                 line4.setAttribute('required', '');
@@ -498,6 +512,11 @@ function lineSelect() {
                     line4.style.display = 'none';
                     line5.style.display = 'none';
                     line6.style.display = 'none';
+
+                    line3d.style.display = 'none';
+                    line4d.style.display = 'none';
+                    line5d.style.display = 'none';
+                    line6d.style.display = 'none';
 
                     line3.removeAttribute('required', '');
                     line4.removeAttribute('required', '');
@@ -538,6 +557,9 @@ function lineSelect() {
                 line2.style.display = 'block';
                 line3.style.display = 'block';
 
+                line2d.style.display = 'grid';
+                line3d.style.display = 'grid';
+
                 line2.setAttribute('required', '');
                 line3.setAttribute('required', '');
                 line4.setAttribute('required', '');
@@ -548,6 +570,10 @@ function lineSelect() {
                     line4.style.display = 'none';
                     line5.style.display = 'none';
                     line6.style.display = 'none';
+
+                    line4d.style.display = 'none';
+                    line5d.style.display = 'none';
+                    line6d.style.display = 'none';
 
                     line4.removeAttribute('required', '');
                     line5.removeAttribute('required', '');
@@ -587,6 +613,10 @@ function lineSelect() {
                 line3.style.display = 'block';
                 line4.style.display = 'block';
 
+                line2d.style.display = 'grid';
+                line3d.style.display = 'grid';
+                line4d.style.display = 'grid';
+
                 line2.setAttribute('required', '');
                 line3.setAttribute('required', '');
                 line4.setAttribute('required', '');
@@ -596,6 +626,9 @@ function lineSelect() {
                 try {
                     line5.style.display = 'none';
                     line6.style.display = 'none';
+
+                    line5d.style.display = 'none';
+                    line6d.style.display = 'none';
 
                     line5.removeAttribute('required', '');
                     line6.removeAttribute('required', '');
@@ -634,6 +667,11 @@ function lineSelect() {
                 line3.style.display = 'block';
                 line4.style.display = 'block';
                 line5.style.display = 'block';
+
+                line2d.style.display = 'grid';
+                line3d.style.display = 'grid';
+                line4d.style.display = 'grid';
+                line5d.style.display = 'grid';
 
                 line2.setAttribute('required', '');
                 line3.setAttribute('required', '');
@@ -682,6 +720,12 @@ function lineSelect() {
                 line5.style.display = 'block';
                 line6.style.display = 'block';
 
+                line2d.style.display = 'grid';
+                line3d.style.display = 'grid';
+                line4d.style.display = 'grid';
+                line5d.style.display = 'grid';
+                line6d.style.display = 'grid';
+
                 line2.setAttribute('required', '');
                 line3.setAttribute('required', '');
                 line4.setAttribute('required', '');
@@ -696,7 +740,7 @@ function lineSelect() {
 function drawSelect() {
     try {
         const price = document.getElementById('form__price');
-        const drawInput = document.getElementById('form__lineD');
+        const drawInput = document.getElementById('form__div__lineD');
         const drawSelect = document.getElementById('form__select-drawing');
         const formDrawing = document.querySelector('.form__drawing');
         let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
