@@ -408,12 +408,13 @@ function lineSelect() {
         const selectModel = document.getElementById('form__select-model');
         let modelValue = selectModel.options[selectModel.selectedIndex].value;
 
+        const line1 = document.getElementById('form__line1');
         const line2 = document.getElementById('form__line2');
         const line3 = document.getElementById('form__line3');
         const line4 = document.getElementById('form__line4');
         const line5 = document.getElementById('form__line5');
         const line6 = document.getElementById('form__line6');
-        
+
         const line2d = document.getElementById('form__div__line2');
         const line3d = document.getElementById('form__div__line3');
         const line4d = document.getElementById('form__div__line4');
@@ -739,30 +740,171 @@ function lineSelect() {
     } catch{ }
 }
 
-function drawSelect() {
-    try {
-        const price = document.getElementById('form__price');
-        const drawInput = document.getElementById('form__lineD');
-        const drawSelect = document.getElementById('form__select-drawing');
-        const formDrawing = document.querySelector('.form__drawing');
-        let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
-        if (drawSelectValue == 'true') {
-            if (parseInt(price.value) > 0 && price.value != '') {
-                price.value = parseInt(price.value) + 70;
-            }
-            drawInput.style.display = 'block';
-            formDrawing.style.display = 'block';
-        } else if (drawSelectValue == 'false') {
-            if (parseInt(price.value) > 0 && price.value != '') {
-                price.value = parseInt(price.value) - 70;
-            }
-            drawInput.style.display = 'none';
-            formDrawing.style.display = 'none';
-        }
-    } catch{ }
+function fontSelect() {
+
+    const line1 = document.getElementById('form__line1');
+    const line2 = document.getElementById('form__line2');
+    const line3 = document.getElementById('form__line3');
+    const line4 = document.getElementById('form__line4');
+    const line5 = document.getElementById('form__line5');
+    const line6 = document.getElementById('form__line6');
+
+    const selectFont1 = document.getElementById('form__line__font1');
+    const selectFont2 = document.getElementById('form__line__font2');
+    const selectFont3 = document.getElementById('form__line__font3');
+    const selectFont4 = document.getElementById('form__line__font4');
+    const selectFont5 = document.getElementById('form__line__font5');
+    const selectFont6 = document.getElementById('form__line__font6');
+
+    let fontValue1 = selectFont1.options[selectFont1.selectedIndex].value;
+    let fontValue2 = selectFont2.options[selectFont2.selectedIndex].value;
+    let fontValue3 = selectFont3.options[selectFont3.selectedIndex].value;
+    let fontValue4 = selectFont4.options[selectFont4.selectedIndex].value;
+    let fontValue5 = selectFont5.options[selectFont5.selectedIndex].value;
+    let fontValue6 = selectFont6.options[selectFont6.selectedIndex].value;
+
+    try{
+
+    switch (fontValue1) {
+        case 'default':
+        case 'arial':
+            line1.style.fontFamily = 'Arial';
+            break;
+        case 'arial-narrow':
+            line1.style.fontFamily = 'Arial Narrow';
+            break;
+        case 'arial-black':
+            line1.style.fontFamily = 'Arial Black';
+            break;
+        case 'script':
+            line1.style.fontFamily = 'Script';
+            break;
+        case 'birds':
+            line1.style.fontFamily = 'Birds';
+            break;
+    }
+
+    switch (fontValue2) {
+        case 'default':
+        case 'arial':
+            line2.style.fontFamily = 'Arial';
+            break;
+        case 'arial-narrow':
+            line2.style.fontFamily = 'Arial Narrow';
+            break;
+        case 'arial-black':
+            line2.style.fontFamily = 'Arial Black';
+            break;
+        case 'script':
+            line3.style.fontFamily = 'Script';
+            break;
+        case 'birds':
+            line4.style.fontFamily = 'Birds';
+            break;
+    }
+
+    switch (fontValue3) {
+        case 'default':
+        case 'arial':
+            line3.style.fontFamily = 'Arial';
+            break;
+        case 'arial-narrow':
+            line3.style.fontFamily = 'Arial Narrow';
+            break;
+        case 'arial-black':
+            line3.style.fontFamily = 'Arial Black';
+            break;
+        case 'script':
+            line3.style.fontFamily = 'Script';
+            break;
+        case 'birds':
+            line3.style.fontFamily = 'Birds';
+            break;
+    }
+
+    switch (fontValue4) {
+        case 'default':
+        case 'arial':
+            line4.style.fontFamily = 'Arial';
+            break;
+        case 'arial-narrow':
+            line4.style.fontFamily = 'Arial Narrow';
+            break;
+        case 'arial-black':
+            line4.style.fontFamily = 'Arial Black';
+            break;
+        case 'script':
+            line4.style.fontFamily = 'Script';
+            break;
+        case 'birds':
+            line4.style.fontFamily = 'Birds';
+            break;
+    }
+
+    switch (fontValue5) {
+        case 'default':
+        case 'arial':
+            line5.style.fontFamily = 'Arial';
+            break;
+        case 'arial-narrow':
+            line5.style.fontFamily = 'Arial Narrow';
+            break;
+        case 'arial-black':
+            line5.style.fontFamily = 'Arial Black';
+            break;
+        case 'script':
+            line5.style.fontFamily = 'Script';
+            break;
+        case 'birds':
+            line5.style.fontFamily = 'Birds';
+            break;
+    }
+
+    switch (fontValue6) {
+        case 'default':
+        case 'arial':
+            line6.style.fontFamily = 'Arial';
+            break;
+        case 'arial-narrow':
+            line6.style.fontFamily = 'Arial Narrow';
+            break;
+        case 'arial-black':
+            line6.style.fontFamily = 'Arial Black';
+            break;
+        case 'script':
+            line6.style.fontFamily = 'Script';
+            break;
+        case 'birds':
+            line6.style.fontFamily = 'Birds';
+            break;
+    }
+} catch {}
 }
 
-function submitData() {
-    const price = document.getElementById('form__price');
-    localStorage.setItem('price', price.value);
-}
+    function drawSelect() {
+        try {
+            const price = document.getElementById('form__price');
+            const drawInput = document.getElementById('form__lineD');
+            const drawSelect = document.getElementById('form__select-drawing');
+            const formDrawing = document.querySelector('.form__drawing');
+            let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
+            if (drawSelectValue == 'true') {
+                if (parseInt(price.value) > 0 && price.value != '') {
+                    price.value = parseInt(price.value) + 70;
+                }
+                drawInput.style.display = 'block';
+                formDrawing.style.display = 'block';
+            } else if (drawSelectValue == 'false') {
+                if (parseInt(price.value) > 0 && price.value != '') {
+                    price.value = parseInt(price.value) - 70;
+                }
+                drawInput.style.display = 'none';
+                formDrawing.style.display = 'none';
+            }
+        } catch{ }
+    }
+
+    function submitData() {
+        const price = document.getElementById('form__price');
+        localStorage.setItem('price', price.value);
+    }
