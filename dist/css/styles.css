@@ -12,6 +12,16 @@
   src: url("fonts/SCRIPTBL.TTF");
 }
 
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("fonts/ARIALN.TTF");
+}
+
+@font-face {
+  font-family: "Arial Black";
+  src: url("fonts/ariblk.ttf");
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -1180,7 +1190,18 @@ input {
   background: #fff;
 }
 
+.form__font__alert {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
+  .form__font__alert {
+    color: red;
+    margin-bottom: 10px;
+    display: initial;
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
   /* NAV (M) */
   #nav {
     position: -webkit-sticky;
