@@ -653,6 +653,7 @@ input {
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
   grid-gap: 5px;
+  margin: 0px auto 40px auto;
 }
 
 #form .form__div__lines .form__div__line input {
@@ -662,6 +663,7 @@ input {
 
 #form .form__div__lines .form__div__line select {
   max-height: 35px;
+  border-radius: 5px;
 }
 
 #form .form__div__lines .form__div__line select option {
@@ -688,7 +690,6 @@ input {
 
 #form .form__div__lines .form__line {
   width: 88%;
-  margin: 0px auto 20px auto;
 }
 
 #form .form__div__select {

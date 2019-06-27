@@ -682,6 +682,8 @@ function lineSelect() {
                 try {
                     line6.style.display = 'none';
 
+                    line6d.style.display = 'none';
+
                     line6.removeAttribute('required', '');
                 } catch { }
                 break;
@@ -740,7 +742,7 @@ function lineSelect() {
 function drawSelect() {
     try {
         const price = document.getElementById('form__price');
-        const drawInput = document.getElementById('form__div__lineD');
+        const drawInput = document.getElementById('form__lineD');
         const drawSelect = document.getElementById('form__select-drawing');
         const formDrawing = document.querySelector('.form__drawing');
         let drawSelectValue = drawSelect.options[drawSelect.selectedIndex].value;
