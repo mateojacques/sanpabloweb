@@ -1197,8 +1197,8 @@ input {
 @media screen and (max-width: 950px) {
   .form__font__alert {
     color: red;
+    display: block;
     margin-bottom: 30px;
-    display: initial;
     font-weight: 200;
     font-size: 1.2rem;
   }
