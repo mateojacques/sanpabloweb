@@ -187,7 +187,7 @@ input {
   transition: 1s ease-in;
   position: absolute;
   display: block;
-  font-size: 2.7em;
+  font-size: 3.5em;
   z-index: 10;
   color: #fff;
   display: -webkit-box;
@@ -205,7 +205,7 @@ input {
   margin: 10px 0px 30px 0px;
   content: "Somos un negocio familiar que abrió sus puertas en 1985 y desde entonces busca satisfacer a sus clientes tanto en precio como en surtido y atención. Contamos con una amplia variedad de productos escolares, comerciales, técnicos, artísticos, textos, de computación, sellos y muchos más. Además ofrecemos un servicio especial a escuelas, jardines y empresas.";
   color: #fff;
-  font-size: 0.5em;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
@@ -228,11 +228,11 @@ input {
 
 #header .header__buttons .header__button {
   color: #fff;
-  padding: 3px 7px;
+  padding: .75rem 1.5rem;
   border-radius: 5px;
   border-style: none;
   background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #132a5c;
+  border: 2px solid #fff;
   -webkit-box-shadow: 7px 5px 3px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 5px 3px 0px rgba(0, 0, 0, 0.5);
   font-size: 1.4em;
@@ -500,8 +500,9 @@ input {
 }*/
 /*---------------------------SELLOS--------------------------------*/
 #sellos {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 0 auto;
   background: #fff;
   padding: 40px 20px;
   display: -webkit-box;
@@ -530,8 +531,9 @@ input {
 
 /*QUESTIONS*/
 #questions {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 0 auto;
   background: #fff;
   padding: 20px 20px 60px 20px;
   display: -webkit-box;
@@ -549,8 +551,9 @@ input {
 
 /*ACLARACIONES*/
 #aclaraciones-sellos {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 0 auto;
   background: #fff;
   padding: 20px 20px 60px 20px;
   display: -webkit-box;
@@ -1068,10 +1071,14 @@ input {
   margin: 30px auto;
 }
 
-#contact #contact-form .cform__div__names,
-#contact #contact-form .cform__div__contact,
+#contact #contact-form .cform__div__names, #contact #contact-form .cform__div__contact,
 #contact #contact-form .cform__div__comments {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+#contact #contact-form .cform__div__names input, #contact #contact-form .cform__div__contact input,
+#contact #contact-form .cform__div__comments input {
+  margin-right: 30px;
 }
 
 #contact #contact-form .cform__div__comments {
@@ -1079,11 +1086,13 @@ input {
   height: auto;
 }
 
-#contact #contact-form .cform__div__comments input[type="text"] {
+#contact #contact-form .cform__div__comments textarea {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
   height: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px;
 }
 
 #contact #contact-form .cform__submit {
@@ -1192,6 +1201,15 @@ input {
 
 .form__font__alert {
   display: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .header__title {
+    font-size: 3rem !important;
+  }
+  .header__title:after {
+    font-size: 1.3rem !important;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -1491,7 +1509,7 @@ input {
   }
 }
 
-@media screen and (max-width: 950px) and (max-width: 468px) {
+@media screen and (max-width: 950px) and (max-width: 600px) {
   /*MAIN SECTION CONTAINER (M)*/
   .main-section__container {
     border: none;
@@ -1539,7 +1557,7 @@ input {
     transition: 1s ease-in;
     position: absolute;
     display: block;
-    font-size: 2em;
+    font-size: 2em !important;
     z-index: 10;
     color: #fff;
     display: -webkit-box;
@@ -1555,7 +1573,7 @@ input {
   #header .header__title::after {
     margin: 5px 0px 30px 0px;
     color: #fff;
-    font-size: 0.45em;
+    font-size: 0.45em !important;
     font-weight: 200;
   }
   #header .header__buttons {
@@ -1576,11 +1594,11 @@ input {
   }
   #header .header__buttons .header__button {
     color: #fff;
-    padding: 3px 7px;
+    padding: .25rem 1rem;
     border-radius: 5px;
     border-style: none;
     background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #132a5c;
+    border: 2px solid #fff;
     -webkit-box-shadow: 7px 5px 3px 0px rgba(0, 0, 0, 0.5);
             box-shadow: 7px 5px 3px 0px rgba(0, 0, 0, 0.5);
     font-size: 1em;
