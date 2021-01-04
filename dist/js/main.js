@@ -103,11 +103,11 @@ function headerIn() {
     }
 
     else if (notebook.matches) {
-        buttons[0].style.bottom = '20px';
+        buttons[0].style.bottom = '40px';
     }
 
     else if (desktop.matches) {
-        buttons[0].style.bottom = '40px';
+        buttons[0].style.bottom = '60px';
     }
 
 
